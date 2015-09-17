@@ -1,0 +1,148 @@
+% localsettings.sty provides useful packages and other macros for
+% figures, tables, etc.
+\ProvidesPackage{localsettings}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             Packages to be used                    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\usepackage{mdwlist}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{enumerate}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{calc}
+\usepackage{fancyhdr}
+\usepackage{keyval}
+\usepackage{pstricks}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[nottoc]{tocbibind}
+\usepackage[utf8]{inputenc}
+%
+% Fonts
+\usepackage[T1]{fontenc}
+% \usepackage{newpxtext,newpxmath}
+%\usepackage[garamond]{mathdesign}
+%\usepackage{times}
+% \usepackage{pxfonts}
+% \usepackage{ccfonts}
+% \usepackage{mathpple}
+% \usepackage{times}
+
+% \usepackage[bitstream-charter]{mathdesign}
+% \usepackage[T1]{fontenc}
+
+\usepackage{ebgaramond}
+
+% \usepackage[urw-garamond]{mathdesign}
+% \usepackage{garamondx}
+% \usepackage[garamondx,cmbraces]{newtxmath}
+
+% \usepackage{tgschola}
+% \usepackage{mathpazo}
+%\usepackage[defaultsans,scale=0.95]{droidsans}
+
+% \renewcommand{\sfdefault}{\rmdefault}
+\addtokomafont{disposition}{\rmfamily}
+%
+% Search directory for image files
+\graphicspath{{./img/}{./fig/}}
+%
+% Engineering notation for numbers
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{E}}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                 Misc Packages                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\usepackage{algpseudocode,algorithm}
+%\usepackage[small,compact]{titlesec}
+%\setlength{\parindent}{0pt}
+%\usepackage{parskip}
+%\usepackage[cm]{fullpage}
+%\usepackage{breqn}
+%\pagestyle{fancyplain}
+%\usepackage[nottoc,numbib]{tocbibind}
+%\usepackage{wrapfig}
+%\usepackage{parskip}
+%\setlength{\columnseprule}{1pt}
+% \setlength{\columnsep}{20pt}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%              Adding Notation Tables                %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[toc]{glossaries}
+%
+% \def\listofnotations{\input symbols.tex \clearpage}
+% \def\anot #1: #2#3{\parbox{2cm}{#1}  {#2 \dotfill  \pagelabel{#3}}\\}
+% \def\newnot#1{\label{#1}}
+% \def\asym #1: #2#3{\parbox{2cm}{$#1$}  {#2 \dotfill  \pagelabel{#3}}\\}
+%\usepackage{nomencl}
+%\makenomenclature
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Theorem environments like remark, example etc.   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \declaretheoremstyle[
+%     headfont=\bfseries,
+%     notebraces={[}{]},
+%     % bodyfont=\normalfont\itshape,
+%     headpunct={},
+%     % preheadhook={\vspace{1.5ex}},
+%     postheadspace=\newline,
+%     % postheadhook={\textcolor{red}{\rule[.6ex]{\linewidth}{0.4pt}}\\},
+%     postheadhook={\textcolor{gray}{\rule[.6ex]{\linewidth}{0.4pt}}\\},
+%     spaceabove=\parsep,
+%     spacebelow=\parsep,
+%     mdframed={
+%       backgroundcolor=gray!20,
+%       % backgroundcolor=red!20,
+%       % linecolor=red!30,
+%       linecolor=gray!30,
+%       innertopmargin=2ex,
+%       innerbottommargin=3ex,
+%       roundcorner=5pt,
+%       skipabove=\parsep,
+%       skipbelow=\parsep }
+% ]{exampstyle}
+
+% \declaretheorem[
+%     style=exampstyle,
+%     name=Remark,
+%     numberwithin=chapter
+% ]{remark}
+
+% \declaretheorem[
+%     style=exampstyle,
+%     name=Example,
+%     numberwithin=chapter
+% ]{example}
+
+% \declaretheorem[
+%     style=exampstyle,
+%     name=Box,
+%     numberwithin=chapter
+% ]{boxenv}
+
+% Redefine proof environment
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+  \pushQED{\qed}%
+  \normalfont \topsep6\p@\@plus6\p@\relax
+  \trivlist
+  \item%[\hskip\labelsep
+%        \itshape
+%%    #1\@addpunct{.}]\ignorespaces% DELETED
+%    #1]\ignorespaces% ADDED
+}{%
+  \popQED\endtrivlist\@endpefalse
+}
+\makeatother

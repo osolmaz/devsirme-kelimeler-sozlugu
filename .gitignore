@@ -1,0 +1,9 @@
+fig/*.eps
+*.aux
+*.toc
+*.dvi
+*.ps
+*.pdf
+*.log
+*.out
+*~
