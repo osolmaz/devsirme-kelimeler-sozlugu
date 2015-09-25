@@ -8,6 +8,18 @@
 % Uncomment if you have chosen to clone it to your project
 % \usepackage{./lazyeqn/lazyeqn}
 
+% \usepackage{caption}
+
+\newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
+
+\usepackage{calc}
+\newlength{\linew}
+\setlength{\linew}{\textwidth+2em}
+\newlength{\ltw}
+\setlength{\ltw}{0.08333\linew}
+\newlength{\rowh}
+\setlength{\rowh}{0.6cm}
+
 \newcommand{\fat}{FarsoArabo\kern -.1em Türkçe}
 
 \title{\Huge\fat:\\[0.6ex] \large Türkçe İçindeki FarsoArap Unsurların \\
@@ -27,6 +39,30 @@
 \newcommand{\kZ}{Z̊}
 \newcommand{\kH}{H̊}
 
+
+\newcommand{\mprow}[5]{%
+  \noindent
+  % \vspace{2.1ex}
+  \begin{minipage}[b][\rowh]{\linewidth}%\vspace{0.5ex}
+  \begin{minipage}{0.15\linewidth}
+    \large #1
+  \end{minipage}
+  \begin{minipage}{0.15\linew}%
+    \Large #2
+  \end{minipage}
+  \begin{minipage}{0.20\linew}%
+    #3
+  \end{minipage}
+  \begin{minipage}{0.20\linew}
+    #4
+  \end{minipage}
+  \begin{minipage}{0.20\linew}
+    #5
+  \end{minipage}
+  \end{minipage}%
+  \newline\noindent %\vspace{0.5ex}
+}
+
 \begin{document}
 
 \maketitle
@@ -34,87 +70,148 @@
 
 \chapter{Ortografi}
 
-\begin{longtable}{p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}}
-Isolated & Final & Medial & Initial & Name & Modern Turkish & ALA-LC[7] & IPA \\
-\toprule
-\textarabic{ ا‎ } & \textarabic{ ـا‎ } & -- & -- & elif & a, e & --, ā & a, e \\
-\textarabic{ ء‎ } & -- & -- & -- & hemze  & -- &  -- & -- \\
-\textarabic{ ب‎ } & \textarabic{ ـب‎ } & \textarabic{ ـبـ‎ } & \textarabic{ بـ‎ } & be & b & b & b \\
-\textarabic{ پ‎ } & \textarabic{ ـپ‎ } & \textarabic{ ـپـ‎ } & \textarabic{ پـ‎ } & pe & p & p & p \\
-\textarabic{ ت‎ } & \textarabic{ ـت‎ } & \textarabic{ ـتـ‎ } & \textarabic{ تـ‎ } & te & t & t & t \\
-\textarabic{ ث‎ } & \textarabic{ ـث‎ } & \textarabic{ ـثـ‎ } & \textarabic{ ثـ‎ } & se & s & s & s \\
-\textarabic{ ج‎ } & \textarabic{ ـج‎ } & \textarabic{ ـجـ‎ } & \textarabic{ جـ‎ } & cim & c & c & d͡ʒ \\
-\textarabic{ چ‎ } & \textarabic{ ـچ‎ } & \textarabic{ ـچـ‎ } & \textarabic{ چـ‎ } & çim & ç & ç & t͡ʃ \\
-\textarabic{ ح‎ } & \textarabic{ ـح‎ } & \textarabic{ ـحـ‎ } & \textarabic{ حـ‎ } & ha & h & ḥ & h \\
-\textarabic{ خ‎ } & \textarabic{ ـخ‎ } & \textarabic{ ـخـ‎ } & \textarabic{ خـ‎ } & hı & h & ḫ & h \\
-\textarabic{ د‎ } & \textarabic{ ـد‎ } & -- & -- & dal & d & d & d \\
-\textarabic{ ذ‎ } & \textarabic{ ـذ‎ } & -- & -- & zel & z & z & z \\
-\textarabic{ ر‎ } & \textarabic{ ـر‎ } & -- & -- & re & r & r & ɾ \\
-\textarabic{ ز‎ } & \textarabic{ ـز‎ } & -- & -- & ze & z & z & z \\
-\textarabic{ ژ‎ } & \textarabic{ ـژ‎ } & -- & -- & je & j & j & ʒ \\
-\textarabic{ س‎ } & \textarabic{ ـس‎ } & \textarabic{ ـسـ‎ } & \textarabic{ سـ‎ } & sin & s & s & s \\
-\textarabic{ ش‎ } & \textarabic{ ـش‎ } & \textarabic{ ـشـ‎ } & \textarabic{ شـ‎ } & şın & ş & ș & ʃ \\
-\textarabic{ ص‎ } & \textarabic{ ـص‎ } & \textarabic{ ـصـ‎ } & \textarabic{ صـ‎ } & sad & s & ṣ & s \\
-\textarabic{ ض‎ } & \textarabic{ ـض‎ } & \textarabic{ ـضـ‎ } & \textarabic{ ضـ‎ } & dad & d, z & ż & d \\
-\textarabic{ ط‎ } & \textarabic{ ـط‎ } & \textarabic{ ـطـ‎ } & \textarabic{ طـ‎ } & tı & t & ṭ & t \\
-\textarabic{ ظ‎ } & \textarabic{ ـظ‎ } & \textarabic{ ـظـ‎ } & \textarabic{ ظـ‎ } & zı & z & ẓ & z \\
-\textarabic{ ع‎ } & \textarabic{ ـع‎ } & \textarabic{ ـعـ‎ } & \textarabic{ عـ‎ } & ayn & ', h (or omitted) & ‘ & ʔ \\
-\textarabic{ غ‎ } & \textarabic{ ـغ‎ } & \textarabic{ ـغـ‎ } & \textarabic{ غـ‎ } & gayn & g, ğ & ġ & ɡ, ɣ \\
-\textarabic{ ف‎ } & \textarabic{ ـف‎ } & \textarabic{ ـفـ‎ } & \textarabic{ فـ‎ } & fe & f & f & f \\
-\textarabic{ ق‎ } & \textarabic{ ـق‎ } & \textarabic{ ـقـ‎ } & \textarabic{ قـ‎ } & kaf & k & ḳ & k \\
-\textarabic{ ك‎ } & \textarabic{ ـك‎ } & \textarabic{ ـكـ‎ } & \textarabic{ كـ‎ } & kef & k, g, ğ, n & k & k \\
-\textarabic{ گ‎ } & \textarabic{ ـگ‎ } & \textarabic{ ـگـ‎ } & \textarabic{ گـ‎ } & gef (1) & g, ğ & g & ɡ \\
-\textarabic{ ڭ‎ } & \textarabic{ ـڭ‎ } & \textarabic{ ـڭـ‎ } & \textarabic{ ڭـ‎ } & nef, sağır kef & n & ñ & ŋ \\
-\textarabic{ ل‎ } & \textarabic{ ـل‎ } & \textarabic{ ـلـ‎ } & \textarabic{ لـ‎ } & lam & l & l & l \\
-\textarabic{ م‎ } & \textarabic{ ـم‎ } & \textarabic{ ـمـ‎ } & \textarabic{ مـ‎ } & mim & m & m & m \\
-\textarabic{ ن‎ } & \textarabic{ ـن‎ } & \textarabic{ ـنـ‎ } & \textarabic{ نـ‎ } & nun & n & n & n \\
-\textarabic{ و‎ } & \textarabic{ ـو‎ } &  -- & -- & vav & v, o, ö, u, ü & v, ū, aw, avv, ūv & v, o, œ, u, y \\
-\textarabic{ ه‎ } & \textarabic{ ـه‎ } & \textarabic{ ـهـ‎ } & \textarabic{ هـ‎ } & he & h, e, a & h (2) & h, æ \\
-\textarabic{ ی‎ } & \textarabic{ ـی‎ } & \textarabic{ ـیـ‎ } & \textarabic{ یـ‎ } & ye & y, ı, i & y, ī, ay, á, īy & j, ɯ, i \\
-\bottomrule
-\end{longtable}
+\section{Eski Alfabe}
 
-\begin{longtable}{p{2em}p{3em}p{4em}p{4em}p{3em}}
-Eskiyazı Harf & Vekil Latin Harf & Adı & Eskiyazı okunuşu & UFA \\
-\toprule
-\arelif    & Ää     & açık ünlü      & elif           & [a], [e]          \\
-% \arhemze &        & hemze          & hemze          & --            \\
-\arbe      & Bb     & b              & be             & [b]             \\
-\arpe      & Pp     & p              & pe             & [p]             \\
-\arte      & Tt     & t              & te             & [t]             \\
-\arthe     & Þþ     & peltek s       & peltek se      & [s]             \\
-\arcim     & Cc     & c              & cim            & [d͡ʒ]           \\
-\archim    & Çç     & ç              & çim            & [t͡ʃ]           \\
-\arha      & \kH\kh & kalın h        & ha             & [h]             \\
-\arxa      & Xx     & gırtlak h      & hı             & [h]             \\
-\ardal     & Dd     & d              & dal            & [d]             \\
-\arzel     & Ⱬⱬ     & diş z          & zel            & [z]             \\
-\arre      & Rr     & r              & re             & [ɾ]             \\
-\arze      & Zz     & z              & ze             & [z]             \\
-\arje      & Jj     & j              & je             & [ʒ]             \\
-\arsin     & Ss     & s              & sin            & [s]             \\
-\arshin    & Şş     & ş              & şın            & [ʃ]             \\
-\arsad     & \kS\ks & kalın s        & sad            & [s]             \\
-\ardad     & Ɖɖ     & diş d          & dad            & [d]             \\
-\arta      & \kT\kt & kalın t        & tı             & [t]             \\
-\arza      & \kZ\kz & kalın z        & zı             & [z]             \\
-\arayn     & Ʒʒ     & gırtlak a      & ayn            & [ʔ]             \\ % ʕſ
-\argayn    & Ğğ     & gırtlak g      & gayn           & [ɡ, ɣ]          \\
-\arfe      & Ff     & f              & fe             & [f]             \\
-\arkaf     & Qq     & gırtlak k      & kaf            & [k]             \\
-\arkef     & Kk     & k              & kef            & [k]             \\
-\argef     & Gg     & g              & gef            & [ɡ]             \\
-\arnef     & Ŋŋ     & geniz n        & nef, sağır kef & [ŋ]             \\
-\arlam     & Ll     & l              & lam            & [l]             \\
-\armim     & Mm     & m              & mim            & [m]             \\
-\arnun     & Nn     & n              & nun            & [n]             \\
-\arvav     & Vv     & v              & vav            & [v, o, œ, u, y] \\
-\arhe      & Hh     & h              & he             & [h, æ]          \\
-\arye      & Ii     & y              & ye             & [j, ɯ, i]       \\
-\bottomrule
-\end{longtable}
+\section{Vekil Alfabe}
+
+% \begin{longtable}{p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}p{2em}}
+% Isolated & Final & Medial & Initial & Name & Modern Turkish & ALA-LC[7] & IPA \\
+% \toprule
+% \textarabic{ ا‎ } & \textarabic{ ـا‎ } & -- & -- & elif & a, e & --, ā & a, e \\
+% \textarabic{ ء‎ } & -- & -- & -- & hemze  & -- &  -- & -- \\
+% \textarabic{ ب‎ } & \textarabic{ ـب‎ } & \textarabic{ ـبـ‎ } & \textarabic{ بـ‎ } & be & b & b & b \\
+% \textarabic{ پ‎ } & \textarabic{ ـپ‎ } & \textarabic{ ـپـ‎ } & \textarabic{ پـ‎ } & pe & p & p & p \\
+% \textarabic{ ت‎ } & \textarabic{ ـت‎ } & \textarabic{ ـتـ‎ } & \textarabic{ تـ‎ } & te & t & t & t \\
+% \textarabic{ ث‎ } & \textarabic{ ـث‎ } & \textarabic{ ـثـ‎ } & \textarabic{ ثـ‎ } & se & s & s & s \\
+% \textarabic{ ج‎ } & \textarabic{ ـج‎ } & \textarabic{ ـجـ‎ } & \textarabic{ جـ‎ } & cim & c & c & d͡ʒ \\
+% \textarabic{ چ‎ } & \textarabic{ ـچ‎ } & \textarabic{ ـچـ‎ } & \textarabic{ چـ‎ } & çim & ç & ç & t͡ʃ \\
+% \textarabic{ ح‎ } & \textarabic{ ـح‎ } & \textarabic{ ـحـ‎ } & \textarabic{ حـ‎ } & ha & h & ḥ & h \\
+% \textarabic{ خ‎ } & \textarabic{ ـخ‎ } & \textarabic{ ـخـ‎ } & \textarabic{ خـ‎ } & hı & h & ḫ & h \\
+% \textarabic{ د‎ } & \textarabic{ ـد‎ } & -- & -- & dal & d & d & d \\
+% \textarabic{ ذ‎ } & \textarabic{ ـذ‎ } & -- & -- & zel & z & z & z \\
+% \textarabic{ ر‎ } & \textarabic{ ـر‎ } & -- & -- & re & r & r & ɾ \\
+% \textarabic{ ز‎ } & \textarabic{ ـز‎ } & -- & -- & ze & z & z & z \\
+% \textarabic{ ژ‎ } & \textarabic{ ـژ‎ } & -- & -- & je & j & j & ʒ \\
+% \textarabic{ س‎ } & \textarabic{ ـس‎ } & \textarabic{ ـسـ‎ } & \textarabic{ سـ‎ } & sin & s & s & s \\
+% \textarabic{ ش‎ } & \textarabic{ ـش‎ } & \textarabic{ ـشـ‎ } & \textarabic{ شـ‎ } & şın & ş & ș & ʃ \\
+% \textarabic{ ص‎ } & \textarabic{ ـص‎ } & \textarabic{ ـصـ‎ } & \textarabic{ صـ‎ } & sad & s & ṣ & s \\
+% \textarabic{ ض‎ } & \textarabic{ ـض‎ } & \textarabic{ ـضـ‎ } & \textarabic{ ضـ‎ } & dad & d, z & ż & d \\
+% \textarabic{ ط‎ } & \textarabic{ ـط‎ } & \textarabic{ ـطـ‎ } & \textarabic{ طـ‎ } & tı & t & ṭ & t \\
+% \textarabic{ ظ‎ } & \textarabic{ ـظ‎ } & \textarabic{ ـظـ‎ } & \textarabic{ ظـ‎ } & zı & z & ẓ & z \\
+% \textarabic{ ع‎ } & \textarabic{ ـع‎ } & \textarabic{ ـعـ‎ } & \textarabic{ عـ‎ } & ayn & ', h (or omitted) & ‘ & ʔ \\
+% \textarabic{ غ‎ } & \textarabic{ ـغ‎ } & \textarabic{ ـغـ‎ } & \textarabic{ غـ‎ } & gayn & g, ğ & ġ & ɡ, ɣ \\
+% \textarabic{ ف‎ } & \textarabic{ ـف‎ } & \textarabic{ ـفـ‎ } & \textarabic{ فـ‎ } & fe & f & f & f \\
+% \textarabic{ ق‎ } & \textarabic{ ـق‎ } & \textarabic{ ـقـ‎ } & \textarabic{ قـ‎ } & kaf & k & ḳ & k \\
+% \textarabic{ ك‎ } & \textarabic{ ـك‎ } & \textarabic{ ـكـ‎ } & \textarabic{ كـ‎ } & kef & k, g, ğ, n & k & k \\
+% \textarabic{ گ‎ } & \textarabic{ ـگ‎ } & \textarabic{ ـگـ‎ } & \textarabic{ گـ‎ } & gef (1) & g, ğ & g & ɡ \\
+% \textarabic{ ڭ‎ } & \textarabic{ ـڭ‎ } & \textarabic{ ـڭـ‎ } & \textarabic{ ڭـ‎ } & nef, sağır kef & n & ñ & ŋ \\
+% \textarabic{ ل‎ } & \textarabic{ ـل‎ } & \textarabic{ ـلـ‎ } & \textarabic{ لـ‎ } & lam & l & l & l \\
+% \textarabic{ م‎ } & \textarabic{ ـم‎ } & \textarabic{ ـمـ‎ } & \textarabic{ مـ‎ } & mim & m & m & m \\
+% \textarabic{ ن‎ } & \textarabic{ ـن‎ } & \textarabic{ ـنـ‎ } & \textarabic{ نـ‎ } & nun & n & n & n \\
+% \textarabic{ و‎ } & \textarabic{ ـو‎ } &  -- & -- & vav & v, o, ö, u, ü & v, ū, aw, avv, ūv & v, o, œ, u, y \\
+% \textarabic{ ه‎ } & \textarabic{ ـه‎ } & \textarabic{ ـهـ‎ } & \textarabic{ هـ‎ } & he & h, e, a & h (2) & h, æ \\
+% \textarabic{ ی‎ } & \textarabic{ ـی‎ } & \textarabic{ ـیـ‎ } & \textarabic{ یـ‎ } & ye & y, ı, i & y, ī, ay, á, īy & j, ɯ, i \\
+% \bottomrule
+% \end{longtable}
+% %p{\ltw}p{2\ltw}p{2\ltw}p{2\ltw}{2\ltw}
 
 
+% \begingroup
+% \setlength\extrarowh{5pt}
+% % \begin{table}[htbp]
+%   % \centering
+% \begin{longtable}{>{\large}p{1.5\ltw}>{\Large}p{1.5\ltw}p{2.5\ltw}p{2.5\ltw}p{4\ltw}}
+%   \normalsize Eskiyazı Harf & \normalsize Vekil Harf &\normalsize
+%   Yeniyazı Mukabili &\normalsize Eskiyazı okunuşu &\normalsize Türkçe \mbox{Okunuşu} \\
+%   \toprule
+%   \arelif    & Ää     & açık ünlü      & elif           & [a], [e]          \\
+%   % \arhemze &        & hemze          & hemze          & --            \\
+%   \arbe      & Bb     & b              & be             & [b]             \\
+%   \arpe      & Pp     & p              & pe             & [p]             \\
+%   \arte      & Tt     & t              & te             & [t]             \\
+%   \arthe     & Þþ     & peltek s       & peltek s       & [s]             \\
+%   \arcim     & Cc     & c              & cim            & [d͡ʒ]           \\
+%   \archim    & Çç     & ç              & çim            & [t͡ʃ]           \\
+%   \arha      & \kH\kh & kalın h        & ha             & [h]             \\
+%   \arxa      & Xx     & sürten h       & hı             & [h]             \\
+%   \ardal     & Dd     & d              & dal            & [d]             \\
+%   \arzel     & Ⱬⱬ     & diş z          & zel            & [z]             \\
+%   \arre      & Rr     & r              & re             & [ɾ]             \\
+%   \arze      & Zz     & z              & ze             & [z]             \\
+%   \arje      & Jj     & j              & je             & [ʒ]             \\
+%   \arsin     & Ss     & s              & sin            & [s]             \\
+%   \arshin    & Şş     & ş              & şın            & [ʃ]             \\
+%   \arsad     & \kS\ks & kalın s        & sad            & [s]             \\
+%   \ardad     & Ɖɖ     & diş d          & dad            & [d]             \\
+%   \arta      & \kT\kt & kalın t        & tı             & [t]             \\
+%   \arza      & \kZ\kz & kalın z        & zı             & [z]             \\
+%   \arayn     & Ʒʒ     & gırtlak a      & ayn            & [ʔ]             \\ % ʕſ
+%   \argayn    & Ğğ     & yumuşak g      & gayn           & [ɡ, ɣ]          \\
+%   \arfe      & Ff     & f              & fe             & [f]             \\
+%   \arkaf     & \kK\kk & kalın k        & kaf            & [k]             \\
+%   \arkef     & Kk     & k              & kef            & [k]             \\
+%   \argef     & Gg     & g              & gef            & [ɡ]             \\
+%   \arnef     & Ŋŋ     & geniz n        & nef, sağır kef & [ŋ]             \\
+%   \arlam     & Ll     & l              & lam            & [l]             \\
+%   \armim     & Mm     & m              & mim            & [m]             \\
+%   \arnun     & Nn     & n              & nun            & [n]             \\
+%   \arvav     & Vv     & v              & vav            & [v, o, œ, u, y] \\
+%   \arhe      & Hh     & h              & he             & [h, æ]          \\
+%   \arye      & Ii     & y              & ye             & [j, ɯ, i]       \\
+%   \bottomrule
+%   \caption{Lol}
+%   \label{tab:vekil1}
+% \end{longtable}
+% % \end{table}
+% \endgroup
+
+\begingroup
+% \centering
+\mprow{\normalsize Eskiyazı \\harf}{\normalsize Vekil \\harf}{Vekil
+  \\harf ismi}{Eskiyazı \\harf ismi}{Türkçe \\telaffuz}
+\vspace{1ex} \hrule \vspace{1ex}
+
+\mprow{\arelif   }{Ää     }{açık e       }{elif           }{[a, e]       }
+\mprow{\arayn    }{Ʒʒ     }{gırtlak a    }{ayn            }{[ʔ]            } % ʕſ
+\mprow{\arbe     }{Bb     }{b            }{be             }{[b]            }
+\mprow{\arcim    }{Cc     }{c            }{cim            }{[d͡ʒ]          }
+\mprow{\archim   }{Çç     }{ç            }{çim            }{[t͡ʃ]          }
+\mprow{\ardal    }{Dd     }{d            }{dal            }{[d]            }
+\mprow{\ardad    }{Ɖɖ     }{diş d        }{dad            }{[d, z]          }
+% \mprow{---       }{E      }{e            }{                }{               }
+\mprow{\arfe     }{Ff     }{f            }{fe             }{[f]            }
+\mprow{\argef    }{Gg     }{g            }{gef            }{[ɡ]            }
+\mprow{\argayn   }{Ğğ     }{yumuşak g    }{gayn           }{[ɡ, ɣ]         }
+\mprow{\arhe     }{Hh     }{h            }{he             }{[h, æ]         }
+\mprow{\arha     }{\kH\kh }{kalın h      }{ha             }{[h]            }
+\mprow{\arxa     }{Xx     }{sürten h     }{hı             }{[h]            }
+\mprow{\arye     }{Ii     }{i            }{ye             }{[j, ɯ, i]      }
+\mprow{\arje     }{Jj     }{j            }{je             }{[ʒ]            }
+\mprow{\arkef    }{Kk     }{k            }{kef            }{[k]            }
+\mprow{\arkaf    }{\kK\kk }{kalın k      }{kaf            }{[k]            }
+\mprow{\arlam    }{Ll     }{l            }{lam            }{[l]            }
+\mprow{\armim    }{Mm     }{m            }{mim            }{[m]            }
+\mprow{\arnun    }{Nn     }{n            }{nun            }{[n]            }
+\mprow{\arnef    }{Ŋŋ     }{geniz n      }{nef, sağır kef }{[ŋ]            }
+\mprow{\arpe     }{Pp     }{p            }{pe             }{[p]            }
+\mprow{\arre     }{Rr     }{r            }{re             }{[ɾ]            }
+\mprow{\arsin    }{Ss     }{s            }{sin            }{[s]            }
+\mprow{\arsad    }{\kS\ks }{kalın s      }{sad            }{[s]            }
+\mprow{\arthe    }{Þþ     }{peltek s     }{peltek s       }{[s]            }
+\mprow{\arshin   }{Şş     }{ş            }{şın            }{[ʃ]            }
+\mprow{\arte     }{Tt     }{t            }{te             }{[t]            }
+\mprow{\arta     }{\kT\kt }{kalın t      }{tı             }{[t]            }
+\mprow{\arvav    }{Vv     }{v            }{vav            }{[v, o, œ, u, y]}
+\mprow{\arze     }{Zz     }{z            }{ze             }{[z]            }
+\mprow{\arza     }{\kZ\kz }{kalın z      }{zı             }{[z]            }
+\mprow{\arzel    }{Ⱬⱬ     }{diş z        }{zel            }{[z]            }
+\vspace{-1ex} \varhrulefill[1pt] \vspace{-3ex}
+\begin{table}[H]
+\caption{Vekil alfabe. Vekil harfler yeniyazıda tekabül ettikleri yerlere göre
+  sıralanmış olup rahat karşılaştırma için eski harf isimleri ve konuşmadaki
+  telaffuzları ile birlikte verilmiştir. Telaffuzda UFA notasyonu kullanılmıştır.}
+\end{table}
+\endgroup
 \chapter{Kelime Türetme}
 \section{Bitişimsiz Morfologi}
 
