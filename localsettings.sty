@@ -30,10 +30,15 @@
 % Fonts
 % \usepackage[T1]{fontenc}
 \usepackage{fontspec}
+\usepackage{unicode-math}
 % \setmainfont{cm}
 % \usepackage{tipa}
 
+% \setmainfont{XITS} % you can use any other Times font if you wish
+% \setmathfont{XITS Math}
+
 \usepackage{polyglossia}
+\usepackage{multirow}
 
 \setmainlanguage{turkish}
 \setotherlanguage{arabic}
@@ -43,7 +48,7 @@
 % \usepackage[utf8]{inputenc}
 % \usepackage{newpxtext,newpxmath}
 %\usepackage[garamond]{mathdesign}
-%\usepackage{times}
+% \usepackage{times}
 % \usepackage{pxfonts}
 % \usepackage{ccfonts}
 % \usepackage{mathpple}
@@ -160,3 +165,10 @@
   \popQED\endtrivlist\@endpefalse
 }
 \makeatother
+
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+

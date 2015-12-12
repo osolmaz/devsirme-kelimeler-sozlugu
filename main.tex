@@ -1,5 +1,7 @@
 \documentclass[a5paper,12pt]{scrbook}
 \usepackage[turkish]{babel}
+\newlength{\tabwidth}
+\setlength{\tabwidth}{8.7cm}
 
 % all the local settings defined in /localsettings.sty
 \usepackage{localsettings}
@@ -27,28 +29,16 @@
 \author{H\kern -0.05em .\kern 0.1em O\kern -0.05em .\kern 0.2em Solmaz}
 \date{}
 
-\newcommand{\kt}{t̊}
-\newcommand{\ks}{s̊}
-\newcommand{\kk}{k̊}
-\newcommand{\kz}{z̊}
-\newcommand{\kh}{h̊}
-
-\newcommand{\kT}{T̊}
-\newcommand{\kS}{S̊}
-\newcommand{\kK}{K̊}
-\newcommand{\kZ}{Z̊}
-\newcommand{\kH}{H̊}
-
 
 \newcommand{\mprow}[5]{%
   \noindent
   % \vspace{2.1ex}
   \begin{minipage}[b][\rowh]{\linewidth}%\vspace{0.5ex}
-  \begin{minipage}{0.15\linewidth}
-    \large #1
-  \end{minipage}
   \begin{minipage}{0.15\linew}%
     \Large #2
+  \end{minipage}
+  \begin{minipage}{0.15\linewidth}
+    \large #1
   \end{minipage}
   \begin{minipage}{0.20\linew}%
     #3
@@ -172,7 +162,7 @@
 \vspace{1ex} \hrule \vspace{1ex}
 
 \mprow{\arelif   }{Ää     }{açık e       }{elif           }{[a, e]       }
-\mprow{\arayn    }{Ʒʒ     }{gırtlak a    }{ayn            }{[ʔ]            } % ʕſ
+\mprow{\arayn    }{Øø     }{gırtlak a    }{ayn            }{[ʔ]            } % ʕſ Ʒʒ
 \mprow{\arbe     }{Bb     }{b            }{be             }{[b]            }
 \mprow{\arcim    }{Cc     }{c            }{cim            }{[d͡ʒ]          }
 \mprow{\archim   }{Çç     }{ç            }{çim            }{[t͡ʃ]          }
@@ -183,12 +173,10 @@
 \mprow{\argef    }{Gg     }{g            }{gef            }{[ɡ]            }
 \mprow{\argayn   }{Ğğ     }{yumuşak g    }{gayn           }{[ɡ, ɣ]         }
 \mprow{\arhe     }{Hh     }{h            }{he             }{[h, æ]         }
-\mprow{\arha     }{\kH\kh }{kalın h      }{ha             }{[h]            }
-\mprow{\arxa     }{Xx     }{sürten h     }{hı             }{[h]            }
-\mprow{\arye     }{Ii     }{i            }{ye             }{[j, ɯ, i]      }
+\mprow{\arxa     }{Xx     }{sürtmeli h     }{hı             }{[h]            }
+\mprow{\arye     }{İi     }{i            }{ye             }{[j, ɯ, i]      }
 \mprow{\arje     }{Jj     }{j            }{je             }{[ʒ]            }
 \mprow{\arkef    }{Kk     }{k            }{kef            }{[k]            }
-\mprow{\arkaf    }{\kK\kk }{kalın k      }{kaf            }{[k]            }
 \mprow{\arlam    }{Ll     }{l            }{lam            }{[l]            }
 \mprow{\armim    }{Mm     }{m            }{mim            }{[m]            }
 \mprow{\arnun    }{Nn     }{n            }{nun            }{[n]            }
@@ -196,27 +184,69 @@
 \mprow{\arpe     }{Pp     }{p            }{pe             }{[p]            }
 \mprow{\arre     }{Rr     }{r            }{re             }{[ɾ]            }
 \mprow{\arsin    }{Ss     }{s            }{sin            }{[s]            }
-\mprow{\arsad    }{\kS\ks }{kalın s      }{sad            }{[s]            }
 \mprow{\arthe    }{Þþ     }{peltek s     }{peltek s       }{[s]            }
 \mprow{\arshin   }{Şş     }{ş            }{şın            }{[ʃ]            }
 \mprow{\arte     }{Tt     }{t            }{te             }{[t]            }
-\mprow{\arta     }{\kT\kt }{kalın t      }{tı             }{[t]            }
 \mprow{\arvav    }{Vv     }{v            }{vav            }{[v, o, œ, u, y]}
 \mprow{\arze     }{Zz     }{z            }{ze             }{[z]            }
-\mprow{\arza     }{\kZ\kz }{kalın z      }{zı             }{[z]            }
 \mprow{\arzel    }{Ⱬⱬ     }{diş z        }{zel            }{[z]            }
-\vspace{-1ex} \varhrulefill[1pt] \vspace{-3ex}
+\vspace{-1ex} \hrule \vspace{-3ex}
 \begin{table}[H]
 \caption{Vekil alfabe. Vekil harfler yeniyazıda tekabül ettikleri yerlere göre
   sıralanmış olup rahat karşılaştırma için eski harf isimleri ve konuşmadaki
   telaffuzları ile birlikte verilmiştir. Telaffuzda UFA notasyonu kullanılmıştır.}
 \end{table}
 \endgroup
-\chapter{Kelime Türetme}
+
+\mprow{\arha     }{\kH\kh }{kalın h      }{ha             }{[h]            }
+\mprow{\arkaf    }{\kK\kk }{kalın k      }{kaf            }{[k]            }
+\mprow{\arsad    }{\kS\ks }{kalın s      }{sad            }{[s]            }
+\mprow{\arta     }{\kT\kt }{kalın t      }{tı             }{[t]            }
+\mprow{\arza     }{\kZ\kz }{kalın z      }{zı             }{[z]            }
+
+
+% \chapter{Kelime Türetme}
+
+\chapter{Arap Köklü Kelimelerin Kuralları}
 \section{Bitişimsiz Morfologi}
 
-\section{Arap Köklü Türetme Kuralları}
+\section{Eylem İsmi Kipleri}
 
+\begin{table}[htbp]
+  \footnotesize
+  \centering
+
+  \begin{tabular}{p{0.1\tabwidth} >{\raggedright}p{0.3\tabwidth} >{\raggedright}p{0.2\tabwidth} >{\raggedright}p{0.2\tabwidth} p{0.2\tabwidth}}
+    Kip No & Anlam & Eylem & Eden & Edilen \\
+    \toprule
+    \rom{1} & Sade & Necz, Nücûz, Nicz, Nücz(et), Necâz(et), Nicâz(et), vs. &  Nâciz & Mencuz \\
+    \rom{2} & Geçişli, ettiren, güçlü & Tenciz &  Münecciz & Müneccez \\
+    \rom{3} & İşteş & Münâceze, Nicaz &  Münâciz & Münâcez \\
+    \rom{4} & Geçişli, ettiren & İncaz &  Münciz & Müncez \\
+    \rom{5} & Dönüşlü, ettiren, güçlü & Tenaccüz &  Mütenecciz & Müteneccez \\
+    \rom{6} & \rom{3}'ün işteşlik mukabili & Tenâcüz &  Mütenâciz & Mütenâcez \\
+    \rom{7} & Dönüşlü, ettirilen & İnnicaz & Münnaciz & Münnacez \\
+    \rom{8} & \rom{1}'in dönüşlüsü, geçişsiz & İnticaz & Müntaciz & Müntacez \\
+    \rom{9} & Durum eylemi, geçişsiz & İncizaz & Müncezz & --- \\
+    \rom{10} & Ettiren, bazen ettirilen, çeşitli anlamlar  & İstincaz & Müstanciz & Müstancez \\
+    \midrule
+    \rom{11} & \rom{9}'un aynısı, şiir dışında nadir & İncîzaz & Müncâzz & --- \\
+    \rom{12} & \multirow{4}{*}{\parbox{0.3\tabwidth}{\raggedright Durum eylemi, çok nadir}} & İncîcaz & Müncavciz & Müncavcez \\
+    \rom{13} &  & İncivvaz & Müncavviz & Müncavvez \\
+    \rom{14} &  & İncinzaz & Müncanziz & Müncanzez \\
+    \rom{15} &  & İncinzâ' & Müncanzin & Müncanzen \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Nâciz Kipi: Yapan}
+
+\subsection{Mencuz Kipi: Yapılan}
+
+\subsection{İncaz Kipi: Geçişli (Transitif) Eylem}
+
+
+\chapter{Fars Köklü Kelimelerin Kuralları}
 \section{Fars Köklü NeoOsmanlıca Ekler}
 \fat
 
