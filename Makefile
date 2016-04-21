@@ -14,25 +14,15 @@ PDF    := $(SOURCE:.tex=.pdf)
 # Select all figures under /fig
 # The convention is that all figure files that are to be used in the project
 # have to start with the prefix "fig"
-EPSSRC := $(wildcard $(FIGDIR)/fig*.jpg $(FIGDIR)/fig*.jpeg $(FIGDIR)/fig*.png $(FIGDIR)/fig*.tiff $(FIGDIR)/fig*.tif)
-EPSFIG := $(addsuffix .eps, $(basename $(EPSSRC)))
 #
 # Define rules for all source files.
 # latex => dvi => ps => pdf
 #
 all: $(PDF)
 #
-%.dvi: %.tex
-	@echo "TEX --> DVI"
-	@latex $<
 #
-%.ps: %.dvi
-	@echo "DVI --> PS"
-	@dvips $< > /dev/null 2>&1
-#
-%.pdf: %.ps
-	@echo "PS  --> PDF"
-	@ps2pdf -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress $< $@ > /dev/null 2>&1
+%.pdf: %.tex
+	@xelatex $<
 	@echo $@ done.
 #
 # Use imagemagick to convert raster images to EPS
