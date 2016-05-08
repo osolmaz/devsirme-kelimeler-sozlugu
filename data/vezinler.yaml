@@ -1,0 +1,75 @@
+# NíCZ
+# NúCZ
+# NäCZ
+# NäaCíZ
+# mäNCuZ
+
+# täNCiZ
+# múNäCCíZ
+# múNäCCäZ
+
+# múNaaCäZä
+# múNaaCíZ
+# múNaaCäZ
+
+# iNCaZ
+# múNCíZ
+# múNCäZ
+
+# täNäCCúZ
+# mútäNäCCúZ
+# mútäNäCCäZ
+
+# täNaaCúZ
+# mútäNaaCíZ
+# mútäNaaCäZ
+
+# inNíCaaZ
+# múNNäCíZ
+# múNNäCäZ
+
+# iNtíCaaZ
+# múNTäCíZ
+# múNTäCäZ
+
+# istiNCaaZ
+# mústäNCíZ
+# mústäNCäZ
+
+---
+root:
+  - "mim"
+  - "lam"
+  - "kef"
+nucz: "mülk"
+nuczii: "mülki"
+nucziyet: "mülkiyet"
+neceze: "meleke"
+naaciz:
+  - "mâlik"
+  - "melik"
+mencuz: "memlük"
+tenciz: "temlik"
+teneccuz: "temellük"
+istincaaz: "istimlâk"
+mustenceze: "müstemleke"
+mencezet: "memleket"
+menaaciz: "memâlik"
+encaz: "emlak"
+
+---
+root:
+  - "kef"
+  - "te"
+  - "be"
+nicaaz: "kitap"
+neceze: "ketebe"
+nicaaze: "kitâbe"
+nicaazet: "kitâbet"
+nicaaziyet: "kitâbiyat"
+mencez: "mektep"
+mencuz: "mektup"
+nucuz: "kütüphane"
+nuccaaz: "reisülküttab"
+naaciz: "kâtip"
+
