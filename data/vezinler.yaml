@@ -36,6 +36,9 @@
 # mústäNCíZ
 # mústäNCäZ
 
+# Â, â, Î, î, Û, û
+
+
 ---
 kok:
   - "mim"
@@ -43,7 +46,7 @@ kok:
   - "kef"
 kipler:
   nucz: "mülk"
-  nuczii: "mülki"
+  nuczii: "mülkî"
   nucziyet: "mülkiyet"
   neceze: "meleke"
   naaciz:
@@ -88,7 +91,7 @@ kipler:
   nucezaa: "ulema"
   neccaaze: "allâme"
   incaaz: "ilâm"
-  mencuz: "malum"
-  tenciz: "talim"
+  mencuz: "mâlûm"
+  tenciz: "tâlim"
   munecciz: "muallim"
   nucuuz: "ulûm"
