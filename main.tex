@@ -1,4 +1,4 @@
-\documentclass[a5paper,12pt, oneside]{scrbook}
+\documentclass[a5paper,11pt, oneside]{scrbook}
 \usepackage[turkish]{babel}
 \newlength{\tabwidth}
 \setlength{\tabwidth}{8.7cm}
@@ -6,11 +6,13 @@
 % all the local settings defined in /localsettings.sty
 \usepackage{localsettings}
 \usepackage{arabicletters}
+
 % lazyeqn - math symbols
 % Uncomment if you have chosen to clone it to your project
 % \usepackage{./lazyeqn/lazyeqn}
 
 % \usepackage{caption}
+\usepackage{formatting}
 
 \newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
 
@@ -124,39 +126,39 @@
   % \normalsize Eskiyazı Harf & \normalsize Vekil Harf &\normalsize
   % Yeni yazı Mukabili &\normalsize Eskiyazı okunuşu &\normalsize Türkçe \mbox{Okunuşu} \\
   \toprule
-   Ää     & \arelif                   & elif           & *A veya E          & [a, e, æ]       \\
-   Øø     & \raisebox{0.6ex}{\arayn}  & ayn            & *gırtlak ünlüsü    & [--]            \\ % ʕſ Ʒʒ
-   Bb     & \arbe                     & be             & B                  & [b]             \\
-   Cc     & \raisebox{0.8ex}{\arcim}  & cim            & C                  & [d͡ʒ]            \\
-   Çç     & \raisebox{0.8ex}{\archim} & çim            & Ç                  & [t͡ʃ]            \\
-   Dd     & \ardal                    & dal            & D                  & [d]             \\
-   Ɖɖ     & \raisebox{0.8ex}{\ardad}  & dad            & *diş D             & [d, z]          \\
-   Ff     & \arfe                     & fe             & F                  & [f]             \\
-   Gg     & \argef                    & gef            & G                  & [ɡ]             \\
-   Ğğ     & \raisebox{0.6ex}{\argayn} & gayn           & genelde Ğ          & [ɡ, ɣ]          \\
-   Hh     & \arhe                     & he             & *ince H veya E     & [h, æ]          \\
-   \kH\kh & \raisebox{1.1ex}{\arha}   & ha             & *kalın H           & [h]             \\
-   Xx     & \raisebox{0.7ex}{\arxa}   & hı             & *sürtmeli H        & [h]             \\
-   İi     & \arye                     & ye             & *I, İ veya Y       & [j, ɯ, i]       \\
-   Jj     & \raisebox{0.3ex}{\arje}   & je             & J                  & [ʒ]             \\
-   Kk     & \arkef                    & kef            & *ince K            & [k]             \\
-   \kK\kk & \arkaf                    & kaf            & *kalın K           & [k]             \\
-   Ll     & \arlam                    & lam            & L                  & [l]             \\
-   Mm     & \armim                    & mim            & M                  & [m]             \\
-   Nn     & \raisebox{0.4ex}{\arnun}  & nun            & N                  & [n]             \\
-   Ŋŋ     & \raisebox{-0.7ex}{\arnef} & nef, sağır kef & *geniz N           & [ŋ]             \\
-   Pp     & \arpe                     & pe             & P                  & [p]             \\
-   Rr     & \raisebox{0.4ex}{\arre}   & re             & R                  & [ɾ]             \\
-   Ss     & \raisebox{0.6ex}{\arsin}  & sin            & *ince S            & [s]             \\
-   \kS\ks & \raisebox{0.6ex}{\arsad}  & sad            & *kalın S           & [s]             \\
-   Þþ     & \arthe                    & peltek s       & *peltek S          & [s]             \\
-   Şş     & \raisebox{0.4ex}{\arshin} & şın            & Ş                  & [ʃ]             \\
-   Tt     & \arte                     & te             & *ince T            & [t]             \\
-   \kT\kt & \arta                     & tı             & *kalın T           & [t]             \\
-   Vv     & \raisebox{0.6ex}{\arvav}  & vav            & *O, Ö, U, Ü veya V & [o, œ, u, y, v] \\
-   Zz     & \raisebox{0.6ex}{\arze}   & ze             & Z                  & [z]             \\
-   \kZ\kz & \arza                     & zı             & *kalın Z           & [z]             \\
-   Ⱬⱬ     & \arzel                    & zel            & *diş Z             & [z]             \\
+  \latupelif \latdownelif & \arelif                   & elif           & *A veya E          & [a, e, æ]       \\
+  \latupayn  \latdownayn  & \raisebox{0.6ex}{\arayn}  & ayn            & *gırtlak ünlüsü    & [--]            \\ % ʕſ Ʒʒ
+  \latupbe   \latdownbe   & \arbe                     & be             & B                  & [b]             \\
+  \latupcim  \latdowncim  & \raisebox{0.8ex}{\arcim}  & cim            & C                  & [d͡ʒ]            \\
+  \latupchim \latdownchim & \raisebox{0.8ex}{\archim} & çim            & Ç                  & [t͡ʃ]            \\
+  \latupdal  \latdowndal  & \ardal                    & dal            & D                  & [d]             \\
+  \latupdad  \latdowndad  & \raisebox{0.8ex}{\ardad}  & dad            & *diş D             & [d, z]          \\
+  \latupfe   \latdownfe   & \arfe                     & fe             & F                  & [f]             \\
+  \latupgef  \latdowngef  & \argef                    & gef            & G                  & [ɡ]             \\
+  \latupgayn \latdowngayn & \raisebox{0.6ex}{\argayn} & gayn           & genelde Ğ          & [ɡ, ɣ]          \\
+  \latuphe   \latdownhe   & \arhe                     & he             & *ince H veya E     & [h, æ]          \\
+  \latupha   \latdownha   & \raisebox{1.1ex}{\arha}   & ha             & *kalın H           & [h]             \\
+  \latupxa   \latdownxa   & \raisebox{0.7ex}{\arxa}   & hı             & *sürtmeli H        & [h]             \\
+  \latupye   \latdownye   & \arye                     & ye             & *I, İ veya Y       & [j, ɯ, i]       \\
+  \latupje   \latdownje   & \raisebox{0.3ex}{\arje}   & je             & J                  & [ʒ]             \\
+  \latupkef  \latdownkef  & \arkef                    & kef            & *ince K            & [k]             \\
+  \latupkaf  \latdownkaf  & \arkaf                    & kaf            & *kalın K           & [k]             \\
+  \latuplam  \latdownlam  & \arlam                    & lam            & L                  & [l]             \\
+  \latupmim  \latdownmim  & \armim                    & mim            & M                  & [m]             \\
+  \latupnun  \latdownnun  & \raisebox{0.4ex}{\arnun}  & nun            & N                  & [n]             \\
+  \latupnef  \latdownnef  & \raisebox{-0.7ex}{\arnef} & nef, sağır kef & *geniz N           & [ŋ]             \\
+  \latuppe   \latdownpe   & \arpe                     & pe             & P                  & [p]             \\
+  \latupre   \latdownre   & \raisebox{0.4ex}{\arre}   & re             & R                  & [ɾ]             \\
+  \latupsin  \latdownsin  & \raisebox{0.6ex}{\arsin}  & sin            & *ince S            & [s]             \\
+  \latupsad  \latdownsad  & \raisebox{0.6ex}{\arsad}  & sad            & *kalın S           & [s]             \\
+  \latupthe  \latdownthe  & \arthe                    & peltek s       & *peltek S          & [s]             \\
+  \latupshin \latdownshin & \raisebox{0.4ex}{\arshin} & şın            & Ş                  & [ʃ]             \\
+  \latupte   \latdownte   & \arte                     & te             & *ince T            & [t]             \\
+  \latupta   \latdownta   & \arta                     & tı             & *kalın T           & [t]             \\
+  \latupvav  \latdownvav  & \raisebox{0.6ex}{\arvav}  & vav            & *O, Ö, U, Ü veya V & [o, œ, u, y, v] \\
+  \latupze   \latdownze   & \raisebox{0.6ex}{\arze}   & ze             & Z                  & [z]             \\
+  \latupza   \latdownza   & \arza                     & zı             & *kalın Z           & [z]             \\
+  \latupzel  \latdownzel  & \arzel                    & zel            & *diş Z             & [z]             \\
   \bottomrule
 \end{longtable}
 \vspace{-5ex}
@@ -271,6 +273,7 @@
 
 \chapter{Fars Köklü Kelimelerin Kuralları}
 \section{Fars Köklü Neo-osmanlıca Ekler}
-\fat
+
+\input{sozluk.tex}
 
 \end{document}
