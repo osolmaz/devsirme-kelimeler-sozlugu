@@ -37,39 +37,58 @@
 # mústäNCäZ
 
 ---
-root:
+kok:
   - "mim"
   - "lam"
   - "kef"
-nucz: "mülk"
-nuczii: "mülki"
-nucziyet: "mülkiyet"
-neceze: "meleke"
-naaciz:
-  - "mâlik"
-  - "melik"
-mencuz: "memlük"
-tenciz: "temlik"
-teneccuz: "temellük"
-istincaaz: "istimlâk"
-mustenceze: "müstemleke"
-mencezet: "memleket"
-menaaciz: "memâlik"
-encaz: "emlak"
+kipler:
+  nucz: "mülk"
+  nuczii: "mülki"
+  nucziyet: "mülkiyet"
+  neceze: "meleke"
+  naaciz:
+    - "mâlik"
+    - "melik"
+  mencuz: "memlük"
+  tenciz: "temlik"
+  teneccuz: "temellük"
+  istincaaz: "istimlâk"
+  mustenceze: "müstemleke"
+  mencezet: "memleket"
+  menaaciz: "memâlik"
+  encaz: "emlak"
 
 ---
-root:
+kok:
   - "kef"
   - "te"
   - "be"
-nicaaz: "kitap"
-neceze: "ketebe"
-nicaaze: "kitâbe"
-nicaazet: "kitâbet"
-nicaaziyet: "kitâbiyat"
-mencez: "mektep"
-mencuz: "mektup"
-nucuz: "kütüphane"
-nuccaaz: "reisülküttab"
-naaciz: "kâtip"
+kipler:
+  nicaaz: "kitap"
+  neceze: "ketebe"
+  nicaaze: "kitâbe"
+  nicaazet: "kitâbet"
+  nicaaziyet: "kitâbiyat"
+  mencez: "mektep"
+  mencuz: "mektup"
+  nucuz: "kütüphane"
+  nuccaaz: "reisülküttab"
+  naaciz: "kâtip"
 
+---
+kok:
+  - "ayn"
+  - "lam"
+  - "mim"
+kipler:
+  nicz: "ilim"
+  necez: "alem"
+  naacez: "âlem"
+  naaciz: "âlim"
+  nucezaa: "ulema"
+  neccaaze: "allâme"
+  incaaz: "ilâm"
+  mencuz: "malum"
+  tenciz: "talim"
+  munecciz: "muallim"
+  nucuuz: "ulûm"
