@@ -75,7 +75,7 @@ kipler:
   mencez: "mektep"
   mencuz: "mektup"
   nucuz: "kütüphane"
-  nuccaaz: "reisülküttab"
+  nuccaaz: "küttab"
   naaciz: "kâtip"
 
 ---
@@ -95,3 +95,14 @@ kipler:
   tenciz: "tâlim"
   munecciz: "muallim"
   nucuuz: "ulûm"
+
+---
+kok:
+  - "sad"
+  - "nun"
+  - "fe"
+kipler:
+  nicz: "sınıf"
+  encaaz: "esnaf"
+  tenciz: "tasnif"
+  munecciz: "musannif"
