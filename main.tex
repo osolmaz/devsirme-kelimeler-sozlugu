@@ -1,4 +1,4 @@
-\documentclass[a5paper,11pt, oneside]{scrbook}
+\documentclass[a5paper,11pt, oneside, DIV11]{scrbook}
 \usepackage[turkish]{babel}
 \newlength{\tabwidth}
 \setlength{\tabwidth}{8.7cm}
@@ -33,29 +33,6 @@
 \author{H.\ O.\ Solmaz}
 \date{}
 
-
-\newcommand{\mprow}[5]{%
-  \noindent
-  % \vspace{2.1ex}
-  \begin{minipage}[b][\rowh]{\linewidth}%\vspace{0.5ex}
-  \begin{minipage}{0.14\linew}%
-    \Large #2
-  \end{minipage}
-  \begin{minipage}{0.14\linewidth}
-    \large #1
-  \end{minipage}
-  \begin{minipage}{0.19\linew}
-    \small #4
-  \end{minipage}
-  \begin{minipage}{0.25\linew}%
-    \small#3
-  \end{minipage}
-  \begin{minipage}{0.20\linew}
-    \small#5
-  \end{minipage}
-  \end{minipage}%
-  \newline\noindent %\vspace{0.5ex}
-}
 
 \begin{document}
 
@@ -115,13 +92,13 @@
 % \setlength\extrarowh{5pt}
 % \begin{table}[htbp]
   % \centering
-\renewcommand{\arraystretch}{1.62}
-\begin{longtable}{>{\large}p{1.5\ltw}>{\Large}p{1.5\ltw}>{\small}p{2\ltw}>{\small}p{2.8\ltw}>{\small}p{2\ltw}}
-   \normalsize Vekil \newline harf
-  & \normalsize Eski yazı \newline harf
-  & \normalsize Eski yazı \newline harf ismi
-  & \normalsize Yeni yazı\newline karşılığı
-  & \normalsize Türkçe \newline telaffuz \\
+\renewcommand{\arraystretch}{1.6}
+\begin{longtable}{>{\Large}p{1.5\ltw}>{\Large}p{1.3\ltw}>{\footnotesize}p{1.85\ltw}>{\footnotesize}p{2.8\ltw}>{\footnotesize}p{2\ltw}}
+   \small Vekil \newline harf
+  & \small Eski yazı \newline harf
+  & \small Eski yazı \newline harf ismi
+  & \small Yeni yazı\newline karşılığı
+  & \small Türkçe \newline telaffuz \\
   %
   % \normalsize Eskiyazı Harf & \normalsize Vekil Harf &\normalsize
   % Yeni yazı Mukabili &\normalsize Eskiyazı okunuşu &\normalsize Türkçe \mbox{Okunuşu} \\
@@ -155,7 +132,7 @@
   \latupshin \latdownshin & \raisebox{0.4ex}{\arshin} & şın            & Ş                  & [ʃ]             \\
   \latupte   \latdownte   & \arte                     & te             & *ince T            & [t]             \\
   \latupta   \latdownta   & \arta                     & tı             & *kalın T           & [t]             \\
-  \latupvav  \latdownvav  & \raisebox{0.6ex}{\arvav}  & vav            & *O, Ö, U, Ü veya V & [o, œ, u, y, v] \\
+  \latupvav  \latdownvav  & \raisebox{0.6ex}{\arvav}  & vav            & *O,Ö,U,Ü veya V & \footnotesize[o, œ, u, y, v] \\
   \latupze   \latdownze   & \raisebox{0.6ex}{\arze}   & ze             & Z                  & [z]             \\
   \latupza   \latdownza   & \arza                     & zı             & *kalın Z           & [z]             \\
   \latupzel  \latdownzel  & \arzel                    & zel            & *diş Z             & [z]             \\
