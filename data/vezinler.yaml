@@ -106,3 +106,64 @@ kipler:
   encaaz: "esnaf"
   tenciz: "tasnif"
   munecciz: "musannif"
+
+---
+kok:
+  - "ha"
+  - "mim"
+  - "lam"
+kipler:
+  necz: "haml"
+  neccaaz: "hamal"
+  naaciz: "hâmil"
+  naacize: "hâmile"
+  necze: "hamle"
+  necuuze: "hamûle"
+  inticaaz: "ihtimâl"
+  muntecez: "muhtemel"
+  teneccuz: "tahammül"
+  muteneccez: "mütehammil"
+
+---
+kok:
+  - "ayn"
+  - "re"
+  - "dad"
+kipler:
+  nicz: "ırz"
+  necz: "arz"
+  necez: "araz"
+  naaciz: "ârız"
+  naacize: "ârıza"
+  nevaaciz: "avârız"
+  neciize: "arîza"
+  necuuz: "aruz"
+  inticaaz: "îtiraz"
+  munaaceze: "maraza"
+  mencuz: "mâruz"
+  munaaciz: "muârız"
+  teneccuz: "taarruz"
+  tenciz: "târiz"
+
+---
+kok:
+  - "kaf"
+  - "be"
+  - "lam"
+kipler:
+  nicze: "kıble"
+  necuuz: "kabûl"
+  incaaz: "ikbâl"
+  istincaaz: "istikbâl"
+  mustencez: "müstakbel"
+  nicaaze: "kabala"
+  naaciz: "kâbil"
+  naaciziyet: "kâbiliyet"
+  neciiz: "kabîl"
+  neciize: "kabîle"
+  mencuz: "makbûl"
+  munaaceze: "mukâbele"
+  munaaciz: "mukâbil"
+  tenaaciz: "tekâbül"
+  mutenaaciz: "mütekâbil"
+
