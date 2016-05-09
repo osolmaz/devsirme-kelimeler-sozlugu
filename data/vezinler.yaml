@@ -396,3 +396,144 @@ kipler:
   neceziyaat: "nazariyat"
   naciize: "nazîre"
   nicaazet: "nezâret"
+
+---
+kok:
+  - "ze"
+  - "ye"
+  - "dal"
+kipler:
+  nicaaze: "ziyade"
+  mencez: "mezât"
+  mustencez: "müstezât"
+  munaaceze: "müzâyede"
+  tenciz: "tezyit"
+  naaciz: "zâit"
+
+---
+kok:
+  - "ha"
+  - "re"
+  - "mim"
+kipler:
+  necez: "harem"
+  necaaz: "harâm"
+  naaciz: "hârim"
+  nuczet: "hürmet"
+  incaaz: "ihrâm"
+  inticaaz: "ihtirâm"
+  muntecez: "muhterem"
+  mencez: "mahrem"
+  mencuuz: "mahrum"
+
+---
+kok:
+  - "xa"
+  - "ye"
+  - "re"
+kipler:
+  necz: "hayır"
+  inticaaz: "ihtiyâr"
+
+---
+kok:
+  - "ha"
+  - "kaf"
+  - "kaf"
+kipler:
+  necz: "hak"
+  neccaaz: "hakkâk"
+  nucze: "hokka"
+  neciizet: "hakîkat"
+  nucuuz: "hukuk"
+  incaaz: "ihkâk"
+  munciz: "muhik"
+  istincaaz: "istihkâk"
+  mustencez: "müstehak"
+  teneccuz: "tahakkuk"
+  tenciz: "tahkik"
+  muneccez: "muhakkak"
+  munecciz: "muhakkik"
+
+---
+kok:
+  - "be"
+  - "kaf"
+  - "ye"
+kipler:
+  necez: "bekâ"
+  naaciz: "bâki"
+  neciize: "bakiye"
+  necaazaa: "bakaya"
+  incaaz: "ibkâ"
+  mutenaaciz: "mütebâki"
+
+---
+kok:
+  - "cim"
+  - "lam"
+  - "dal"
+kipler:
+  nicz: "cilt"
+  necaazet: "celâdet"
+  neccaaz: "cellat"
+  munecciz: "mücellit"
+
+---
+kok:
+  - "gayn"
+  - "nun"
+  - "ye"
+kipler:
+  nicaaz: "gınâ"
+  naciiz: "ganî"
+  istincaaz: "istiğnâ"
+  mustenciz: "müstağnî"
+
+---
+kok:
+  - "lam"
+  - "fe"
+  - "za"
+kipler:
+  necz: "lafız"
+  teneccuz: "telaffuz"
+
+---
+kok:
+  - "lam"
+  - "ha"
+  - "kaf"
+kipler:
+  naacize: "lâhika"
+  incaaz: "ilhâk"
+  munciz: "mülhak"
+  inticaaz: "iltihâk"
+
+---
+kok:
+  - "lam"
+  - "zel"
+  - "zel"
+kipler:
+  neczet: "lezzet"
+  neciiz: "lezîz"
+  teneccuz: "telezzüz"
+  mutenecciz: "mütelezziz"
+
+---
+kok:
+  - "vav"
+  - "kaf"
+  - "ayn"
+kipler:
+  nucuuz: "vukû"
+  incaaz: "îkâ"
+  menciz: "mevkî"
+  necze: "vakâ"
+  naacize: "vâkıa"
+  necaaiz: "vekâyî"
+  naaciz: "vâkî"
+  nucuuzaat: "vukuat"
+
+
