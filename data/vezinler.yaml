@@ -52,7 +52,7 @@ kipler:
   naaciz:
     - "mâlik"
     - "melik"
-  mencuz: "memlük"
+  mencuuz: "memlük"
   tenciz: "temlik"
   teneccuz: "temellük"
   istincaaz: "istimlâk"
@@ -73,7 +73,7 @@ kipler:
   nicaazet: "kitâbet"
   nicaaziyet: "kitâbiyat"
   mencez: "mektep"
-  mencuz: "mektup"
+  mencuuz: "mektup"
   nucuz: "kütüphane"
   nuccaaz: "küttab"
   naaciz: "kâtip"
@@ -91,7 +91,7 @@ kipler:
   nucezaa: "ulema"
   neccaaze: "allâme"
   incaaz: "ilâm"
-  mencuz: "mâlûm"
+  mencuuz: "mâlûm"
   tenciz: "tâlim"
   munecciz: "muallim"
   nucuuz: "ulûm"
@@ -140,7 +140,7 @@ kipler:
   necuuz: "aruz"
   inticaaz: "îtiraz"
   munaaceze: "maraza"
-  mencuz: "mâruz"
+  mencuuz: "mâruz"
   munaaciz: "muârız"
   teneccuz: "taarruz"
   tenciz: "târiz"
@@ -161,9 +161,41 @@ kipler:
   naaciziyet: "kâbiliyet"
   neciiz: "kabîl"
   neciize: "kabîle"
-  mencuz: "makbûl"
+  mencuuz: "makbûl"
   munaaceze: "mukâbele"
   munaaciz: "mukâbil"
   tenaaciz: "tekâbül"
   mutenaaciz: "mütekâbil"
 
+---
+kok:
+  - "re"
+  - "he"
+  - "nun"
+kipler:
+  necz: "rehin"
+  neciize: "rehîne"
+  tenciz: "terhin"
+
+---
+kok:
+  - "fe"
+  - "kaf"
+  - "re"
+kipler:
+  neciiz: "fakir"
+  nicze: "fıkra"
+  necz: "fakr"
+  nucezaa: "fukarâ"
+
+---
+kok:
+  - "fe"
+  - "kef"
+  - "re"
+kipler:
+  nicz: "fikir"
+  encaaz: "efkâr"
+  mencuuze: "mefkûre"
+  teneccuz: "tefekkür"
+  mutenecciz: "mütefekkir"
