@@ -1,18 +1,19 @@
 
 
 \newcommand\kipkokentry[3]{%
-  \textbf{\textsf{#1}}\,%
-  {\smaller{} %
+  \textbf{\textsf{#1}}\,\,\,%
+  {%
     \raisebox{.24ex}{\smaller[2][}%
-    \texttt{\bfseries #2}%
+    % \texttt{\bfseries #2}%
+    {\smaller #2}%
     \raisebox{.24ex}{\smaller[2]]}%
-  }\,\,%
+  }\,\,\,%
   {\smaller #3}
   \newline%
 }
 
 \newcommand\dictchapter[1]{%
-  \begin{center}
-    \Large -\textbf{#1}-
-  \end{center}
+  \begin{center}%
+    \LARGE \bfseries --\,#1\,--%
+  \end{center}%
 }

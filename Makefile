@@ -21,10 +21,11 @@ pdf: $(PDF)
 generate-all: kip2kok
 
 kip2kok:
-	farsoarap_sozluk.py data/vezinler.yaml generated/kipten_koke.tex
+	farsoarap_gen_kip.py data/vezinler.yaml generated/kipten_koke.tex
+	farsoarap_gen_kok.py data/vezinler.yaml generated/kokten_kipe.tex
 
-edit: show-dvi
-	$(EDITOR) $(SOURCE) $(ALL)
+edit:
+	emacs $(SOURCE) $(ALL)&
 #
 clean:
 	@rm -f *.ps *.dvi *.pdf *~ *.log *.aux *.toc

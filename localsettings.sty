@@ -30,8 +30,9 @@
 \usepackage[labelfont=bf,font=footnotesize]{caption}
 
 \usepackage{relsize}
-\usepackage{geometry}
+\usepackage[left=20mm,right=12mm,top=18mm, bottom=25mm]{geometry}
 
+\setlength{\columnseprule}{.3pt}
 
 % \captionsetup[longtable]{%
 %   labelfont={footnotesize,} ,
@@ -56,6 +57,15 @@
 
 % \fontspec[Path = ./fonts/] { }
 
+\setmainfont
+[BoldFont = texgyrepagella-bold.otf,
+ItalicFont = texgyrepagella-italic.otf,
+BoldItalicFont = texgyrepagella-bolditalic.otf]
+{texgyrepagella-regular.otf}
+
+% \usepackage{mathpazo}
+
+
 % \usepackage[Latin]{ucharclasses}
 % \usepackage{times}
 
@@ -74,33 +84,40 @@
 
 % \setmainfont
 % [Path = ./fonts/,
-% BoldFont = timesbd.ttf,
-% ItalicFont = timesi.ttf,
-% BoldItalicFont = timesbi.ttf]
-% {palatino-regular.otf}
+% BoldFont = PalatinoLTStd-Bold.otf,
+% ItalicFont = PalatinoLTStd-Italic.otf,
+% BoldItalicFont = PalatinoLTStd-BoldItalic.otf]
+% {PalatinoLTStd-Roman.otf}
 
 
-\setmainfont
-[Path = ./fonts/,
-BoldFont = cmunbx.otf,
-ItalicFont = cmunti.otf,
-BoldItalicFont = cmunbi.otf]
-{cmunrm.otf}
+% \setmainfont
+% [Path = ./fonts/,
+% BoldFont = cmunbx.otf,
+% ItalicFont = cmunti.otf,
+% BoldItalicFont = cmunbi.otf]
+% {cmunrm.otf}
+
+% \setsansfont
+% [Path = ./fonts/,
+% BoldFont = cmunsx.otf,
+% ItalicFont = cmunsi.otf,
+% BoldItalicFont = cmunso.otf]
+% {cmunss.otf}
 
 \setsansfont
 [Path = ./fonts/,
-BoldFont = cmunsx.otf,
-ItalicFont = cmunsi.otf,
-BoldItalicFont = cmunso.otf]
-{cmunss.otf}
+BoldFont = URWClassico-Bold.otf,
+ItalicFont = URWClassico-Italic.otf,
+BoldItalicFont = URWClassico-BoldItalic.otf]
+{URWClassico-Regular.otf}
 
-\setmonofont
+
+\newfontfamily\timesfont
 [Path = ./fonts/,
-BoldFont = cmuntb.otf,
-ItalicFont = cmunit.otf,
-BoldItalicFont = cmuntx.otf]
-{cmuntt.otf}
-
+BoldFont = timesbd.ttf,
+ItalicFont = timesi.ttf,
+BoldItalicFont = timesbi.ttf]
+{times.ttf}
 
 
 
@@ -134,7 +151,6 @@ BoldItalicFont = cmuntx.otf]
 % \usepackage[garamondx,cmbraces]{newtxmath}
 
 % \usepackage{tgschola}
-% \usepackage{mathpazo}
 %\usepackage[defaultsans,scale=0.95]{droidsans}
 
 % \renewcommand{\sfdefault}{\rmdefault}

@@ -44,6 +44,30 @@
 % \newcommand{\kZ}{Z̊}
 % \newcommand{\kH}{H̊}
 
+
+\newcommand{\kt}{ṫ}
+\newcommand{\ks}{ṡ}
+\newcommand{\kk}{k̇}
+\newcommand{\kz}{ż}
+\newcommand{\kh}{ḣ}
+\newcommand{\kT}{Ṫ}
+\newcommand{\kS}{Ṡ}
+\newcommand{\kK}{K̇}
+\newcommand{\kZ}{Ż}
+\newcommand{\kH}{Ḣ}
+
+
+% \newcommand{\kt}{ṫ}
+% \newcommand{\ks}{ṡ}
+% \newcommand{\kk}{k̇}
+% \newcommand{\kz}{ż}
+% \newcommand{\kh}{ḣ}
+% \newcommand{\kT}{Ṫ}
+% \newcommand{\kS}{Ṡ}
+% \newcommand{\kK}{K̇}
+% \newcommand{\kZ}{Ż}
+% \newcommand{\kH}{Ḣ}
+
 % \newcommand{\kt}{ṫ}
 % \newcommand{\ks}{ṡ}
 % \newcommand{\kk}{k̇}
@@ -77,16 +101,16 @@
 % \newcommand{\kZ}{Ž}
 % \newcommand{\kH}{Ȟ}
 
-\newcommand{\kt}{ṫ}
-\newcommand{\ks}{ṡ}
-\newcommand{\kk}{q}
-\newcommand{\kz}{ż}
-\newcommand{\kh}{ḣ}
-\newcommand{\kT}{Ṫ}
-\newcommand{\kS}{Ṡ}
-\newcommand{\kK}{Q}
-\newcommand{\kZ}{Ż}
-\newcommand{\kH}{Ḣ}
+% \newcommand{\kt}{ṫ}
+% \newcommand{\ks}{ṡ}
+% \newcommand{\kk}{q}
+% \newcommand{\kz}{ż}
+% \newcommand{\kh}{ḣ}
+% \newcommand{\kT}{Ṫ}
+% \newcommand{\kS}{Ṡ}
+% \newcommand{\kK}{Q}
+% \newcommand{\kZ}{Ż}
+% \newcommand{\kH}{Ḣ}
 
 
 % \newcommand{\kt}{ṭ}
@@ -114,82 +138,85 @@
 
 
 
-\newcommand{\latupelif}{A}
-\newcommand{\latupbe}{B}
-\newcommand{\latuppe}{P}
-\newcommand{\latupte}{T}
-\newcommand{\latupthe}{Þ}
-\newcommand{\latupcim}{C}
-\newcommand{\latupchim}{Ç}
-\newcommand{\latupha}{\kH}
-\newcommand{\latupxa}{X}
-\newcommand{\latupdal}{D}
-\newcommand{\latupzel}{Ž}
-% \newcommand{\latupzel}{Ż}
-% \newcommand{\latupzel}{Ƶ}
-% \newcommand{\latupzel}{Ⱬ}
-\newcommand{\latupre}{R}
-\newcommand{\latupze}{Z}
-\newcommand{\latupje}{J}
-\newcommand{\latupsin}{S}
-\newcommand{\latupshin}{Ş}
-\newcommand{\latupsad}{\kS}
-% \newcommand{\latupdad}{Ḋ}
-\newcommand{\latupdad}{Đ}
-% \newcommand{\latupdad}{Ɖ}
-\newcommand{\latupta}{\kT}
-\newcommand{\latupza}{\kZ}
-\newcommand{\latupayn}{Ø}
-\newcommand{\latupgayn}{Ğ}
-\newcommand{\latupfe}{F}
-\newcommand{\latupkaf}{\kK}
-\newcommand{\latupkef}{K}
-\newcommand{\latupgef}{G}
-\newcommand{\latupnef}{Ŋ}
-\newcommand{\latuplam}{L}
-\newcommand{\latupmim}{M}
-\newcommand{\latupnun}{N}
-\newcommand{\latupvav}{V}
-\newcommand{\latuphe}{H}
-\newcommand{\latupye}{Y}
+\newcommand\latclosure[1]{\timesfont #1}
+% \newcommand\latclosure[1]{#1}
 
-\newcommand{\latdownelif}{a}
-\newcommand{\latdownbe}{b}
-\newcommand{\latdownpe}{p}
-\newcommand{\latdownte}{t}
-\newcommand{\latdownthe}{þ}
-\newcommand{\latdowncim}{c}
-\newcommand{\latdownchim}{ç}
-\newcommand{\latdownha}{\kh}
-\newcommand{\latdownxa}{x}
-\newcommand{\latdowndal}{d}
-\newcommand{\latdownzel}{ž}
-% \newcommand{\latdownzel}{ż}
-% \newcommand{\latdownzel}{ƶ}
-% \newcommand{\latdownzel}{ⱬ}
-\newcommand{\latdownre}{r}
-\newcommand{\latdownze}{z}
-\newcommand{\latdownje}{j}
-\newcommand{\latdownsin}{s}
-\newcommand{\latdownshin}{ş}
-\newcommand{\latdownsad}{\ks}
-% \newcommand{\latdowndad}{ḋ}
-\newcommand{\latdowndad}{đ}
-% \newcommand{\latdowndad}{ɖ}
-\newcommand{\latdownta}{\kt}
-\newcommand{\latdownza}{\kz}
-\newcommand{\latdownayn}{ø}
-\newcommand{\latdowngayn}{ğ}
-\newcommand{\latdownfe}{f}
-\newcommand{\latdownkaf}{\kk}
-\newcommand{\latdownkef}{k}
-\newcommand{\latdowngef}{g}
-\newcommand{\latdownnef}{ŋ}
-\newcommand{\latdownlam}{l}
-\newcommand{\latdownmim}{m}
-\newcommand{\latdownnun}{n}
-\newcommand{\latdownvav}{v}
-\newcommand{\latdownhe}{h}
-\newcommand{\latdownye}{y}
+\newcommand{\latupelif}{\latclosure{A}}
+\newcommand{\latupbe}{\latclosure{B}}
+\newcommand{\latuppe}{\latclosure{P}}
+\newcommand{\latupte}{\latclosure{T}}
+\newcommand{\latupthe}{\latclosure{Þ}}
+\newcommand{\latupcim}{\latclosure{C}}
+\newcommand{\latupchim}{\latclosure{Ç}}
+\newcommand{\latupha}{\latclosure{\kH}}
+\newcommand{\latupxa}{\latclosure{X}}
+\newcommand{\latupdal}{\latclosure{D}}
+% \newcommand{\latupzel}{\latclosure{Ž}}
+% \newcommand{\latupzel}{\latclosure{Ż}}
+\newcommand{\latupzel}{\latclosure{Ƶ}}
+% \newcommand{\latupzel}{\latclosure{Ⱬ}}
+\newcommand{\latupre}{\latclosure{R}}
+\newcommand{\latupze}{\latclosure{Z}}
+\newcommand{\latupje}{\latclosure{J}}
+\newcommand{\latupsin}{\latclosure{S}}
+\newcommand{\latupshin}{\latclosure{Ş}}
+\newcommand{\latupsad}{\latclosure{\kS}}
+% \newcommand{\latupdad}{\latclosure{Ḋ}}
+\newcommand{\latupdad}{\latclosure{Đ}}
+% \newcommand{\latupdad}{\latclosure{Ɖ}}
+\newcommand{\latupta}{\latclosure{\kT}}
+\newcommand{\latupza}{\latclosure{\kZ}}
+\newcommand{\latupayn}{\latclosure{Ø}}
+\newcommand{\latupgayn}{\latclosure{Ğ}}
+\newcommand{\latupfe}{\latclosure{F}}
+\newcommand{\latupkaf}{\latclosure{\kK}}
+\newcommand{\latupkef}{\latclosure{K}}
+\newcommand{\latupgef}{\latclosure{G}}
+\newcommand{\latupnef}{\latclosure{Ŋ}}
+\newcommand{\latuplam}{\latclosure{L}}
+\newcommand{\latupmim}{\latclosure{M}}
+\newcommand{\latupnun}{\latclosure{N}}
+\newcommand{\latupvav}{\latclosure{V}}
+\newcommand{\latuphe}{\latclosure{H}}
+\newcommand{\latupye}{\latclosure{Y}}
+
+\newcommand{\latdownelif}{\latclosure{a}}
+\newcommand{\latdownbe}{\latclosure{b}}
+\newcommand{\latdownpe}{\latclosure{p}}
+\newcommand{\latdownte}{\latclosure{t}}
+\newcommand{\latdownthe}{\latclosure{þ}}
+\newcommand{\latdowncim}{\latclosure{c}}
+\newcommand{\latdownchim}{\latclosure{ç}}
+\newcommand{\latdownha}{\latclosure{\kh}}
+\newcommand{\latdownxa}{\latclosure{x}}
+\newcommand{\latdowndal}{\latclosure{d}}
+% \newcommand{\latdownzel}{\latclosure{ž}}
+% \newcommand{\latdownzel}{\latclosure{ż}}
+\newcommand{\latdownzel}{\latclosure{ƶ}}
+% \newcommand{\latdownzel}{\latclosure{ⱬ}}
+\newcommand{\latdownre}{\latclosure{r}}
+\newcommand{\latdownze}{\latclosure{z}}
+\newcommand{\latdownje}{\latclosure{j}}
+\newcommand{\latdownsin}{\latclosure{s}}
+\newcommand{\latdownshin}{\latclosure{ş}}
+\newcommand{\latdownsad}{\latclosure{\ks}}
+% \newcommand{\latdowndad}{\latclosure{ḋ}}
+\newcommand{\latdowndad}{\latclosure{đ}}
+% \newcommand{\latdowndad}{\latclosure{ɖ}}
+\newcommand{\latdownta}{\latclosure{\kt}}
+\newcommand{\latdownza}{\latclosure{\kz}}
+\newcommand{\latdownayn}{\latclosure{ø}}
+\newcommand{\latdowngayn}{\latclosure{ğ}}
+\newcommand{\latdownfe}{\latclosure{f}}
+\newcommand{\latdownkaf}{\latclosure{\kk}}
+\newcommand{\latdownkef}{\latclosure{k}}
+\newcommand{\latdowngef}{\latclosure{g}}
+\newcommand{\latdownnef}{\latclosure{ŋ}}
+\newcommand{\latdownlam}{\latclosure{l}}
+\newcommand{\latdownmim}{\latclosure{m}}
+\newcommand{\latdownnun}{\latclosure{n}}
+\newcommand{\latdownvav}{\latclosure{v}}
+\newcommand{\latdownhe}{\latclosure{h}}
+\newcommand{\latdownye}{\latclosure{y}}
 
 
