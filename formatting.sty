@@ -3,10 +3,16 @@
 \newcommand\kipkokentry[3]{%
   \textbf{\textsf{#1}}\,\,\,%
   {%
-    \raisebox{.12ex}{\smaller[2][}%
-    % \texttt{\bfseries #2}%
-    {\smaller \texttt{#2}}%
-    \raisebox{.12ex}{\smaller[2]]}%
+    \raisebox{.16ex}{\smaller$[$}%
+    \kern 0.07em%
+    % \raisebox{.16ex}{\smaller[2][}%
+    % {\smaller \textbf{\texttt{#2}}}%
+    {\smaller\texttt{#2}}%
+    % {\texttt{#2}}%
+    % {\smaller #2}%
+    \kern 0.07em%
+    \raisebox{.16ex}{\smaller $]$}%
+    % \raisebox{.16ex}{\smaller[2]]}%
   }\,\,\,%
   {\smaller #3}
   \newline%
@@ -21,7 +27,8 @@
     % \raisebox{.16ex}{\smaller[2][}%
     % \texttt{\bfseries #2}%
     {%
-      \smaller \nohyphens{#2}
+      \nohyphens{#2}
+      % \smaller \nohyphens{#2}
     }%
     % \raisebox{.16ex}{\smaller[2]]}%
   }%

@@ -61,7 +61,9 @@
 % \fontspec[Path = ./fonts/] { }
 
 \setmainfont
-[BoldFont = texgyrepagella-bold.otf,
+[Path = ./fonts/,
+% Scale=1.1,
+BoldFont = texgyrepagella-bold.otf,
 ItalicFont = texgyrepagella-italic.otf,
 BoldItalicFont = texgyrepagella-bolditalic.otf]
 {texgyrepagella-regular.otf}
@@ -107,8 +109,32 @@ BoldItalicFont = texgyrepagella-bolditalic.otf]
 % BoldItalicFont = cmunso.otf]
 % {cmunss.otf}
 
+% \setmonofont
+% [Path = ./fonts/,
+% BoldFont = cmuntb.otf,
+% ItalicFont = cmunit.otf,
+% BoldItalicFont = cmuntx.otf]
+% {cmuntt.otf}
+
+% \setmonofont
+% [Path = ./fonts/,
+% BoldFont = courbd.ttf,
+% ItalicFont = couri.ttf,
+% BoldItalicFont = courbi.ttf]
+% {cour.ttf}
+
+% \setmonofont
+% [Path = ./fonts/,
+% Scale=0.77,
+% BoldFont = consolas_bold.ttf,
+% ItalicFont = consolas_italic.ttf,
+% BoldItalicFont = consolas_bold_italic.ttf]
+% {consolas.ttf}
+
+
 \setsansfont
 [Path = ./fonts/,
+Scale=0.9,
 BoldFont = URWClassico-Bold.otf,
 ItalicFont = URWClassico-Italic.otf,
 BoldItalicFont = URWClassico-BoldItalic.otf]
@@ -135,7 +161,12 @@ BoldItalicFont = timesbi.ttf]
 \setmainlanguage{turkish}
 \setotherlanguage{arabic}
 
-\newfontfamily\arabicfont[Script=Arabic,Scale=1.8]{Scheherazade}
+\newfontfamily\arabicfont%
+[Path = ./fonts/,
+Script = Arabic,
+BoldFont = Scheherazade-Bold.ttf,
+Scale=1.8]%
+{Scheherazade-Regular.ttf}
 
 % \usepackage{newpxtext,newpxmath}
 %\usepackage[garamond]{mathdesign}
