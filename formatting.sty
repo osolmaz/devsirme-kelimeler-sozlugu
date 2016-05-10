@@ -3,17 +3,35 @@
 \newcommand\kipkokentry[3]{%
   \textbf{\textsf{#1}}\,\,\,%
   {%
-    \raisebox{.24ex}{\smaller[2][}%
+    \raisebox{.12ex}{\smaller[2][}%
     % \texttt{\bfseries #2}%
-    {\smaller #2}%
-    \raisebox{.24ex}{\smaller[2]]}%
+    {\smaller \texttt{#2}}%
+    \raisebox{.12ex}{\smaller[2]]}%
   }\,\,\,%
   {\smaller #3}
   \newline%
 }
 
+\newcommand\kokkipentry[2]{%
+  \raggedright
+  % {\smaller\texttt{\textbf{#1}}}%
+  {\smaller\textbf{\sffamily #1}}%
+  \,\,\,%
+  {%
+    % \raisebox{.16ex}{\smaller[2][}%
+    % \texttt{\bfseries #2}%
+    {%
+      \smaller \nohyphens{#2}
+    }%
+    % \raisebox{.16ex}{\smaller[2]]}%
+  }%
+  % {\smaller #3}
+  \newline%
+}
+
+
 \newcommand\dictchapter[1]{%
   \begin{center}%
-    \LARGE \bfseries --\,#1\,--%
+    \LARGE --\,\textbf{#1}\,--%
   \end{center}%
 }

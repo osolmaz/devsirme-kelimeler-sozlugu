@@ -18,10 +18,12 @@ pdf: $(PDF)
 %.pdf: %.tex
 	xelatex $<
 
-generate-all: kip2kok
+generate-all: kip2kok kok2kip
 
 kip2kok:
 	farsoarap_gen_kip.py data/vezinler.yaml generated/kipten_koke.tex
+
+kok2kip:
 	farsoarap_gen_kok.py data/vezinler.yaml generated/kokten_kipe.tex
 
 edit:

@@ -45,16 +45,52 @@
 % \newcommand{\kH}{H̊}
 
 
-\newcommand{\kt}{ṫ}
-\newcommand{\ks}{ṡ}
-\newcommand{\kk}{k̇}
-\newcommand{\kz}{ż}
-\newcommand{\kh}{ḣ}
-\newcommand{\kT}{Ṫ}
-\newcommand{\kS}{Ṡ}
-\newcommand{\kK}{K̇}
-\newcommand{\kZ}{Ż}
-\newcommand{\kH}{Ḣ}
+% \newcommand{\kt}{ṫ}
+% \newcommand{\ks}{ṡ}
+% \newcommand{\kk}{k̇}
+% \newcommand{\kz}{ż}
+% \newcommand{\kh}{ḣ}
+% \newcommand{\kT}{Ṫ}
+% \newcommand{\kS}{Ṡ}
+% \newcommand{\kK}{K̇}
+% \newcommand{\kZ}{Ż}
+% \newcommand{\kH}{Ḣ}
+
+\def\dynscriptsize{\check@mathfonts\fontsize{\sf@size}{\z@}\selectfont}
+\makeatother
+\def\textunderset#1#2{\leavevmode
+  \vtop{\offinterlineskip\halign{%
+    \hfil##\hfil\cr\strut#2\cr\noalign{\kern-.3ex}
+    \hidewidth\dynscriptsize\strut#1\hidewidth\cr}}}
+
+\def\textoverset#1#2{\leavevmode
+  \vtop{\offinterlineskip\halign{%
+    \hfil##\hfil\cr\strut#2\cr\noalign{\kern-2.9ex}
+    \hidewidth\dynscriptsize\strut#1\hidewidth\cr}}}
+
+\def\textoversetdist#1#2#3{\leavevmode
+  \vtop{\offinterlineskip\halign{%
+    \hfil##\hfil\cr\strut#2\cr\noalign{\kern#3}
+    \hidewidth\dynscriptsize\strut#1\hidewidth\cr}}}
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\newcommand\overdot[2]{\textoversetdist{$\bigcdot$}{#1}{#2}}
+% \newcommand\overdot[2]{\textoverset{\LARGE .}{#1}}
+
+\newcommand{\kt}{\overdot{t}{-2.65ex}}
+\newcommand{\ks}{\overdot{s}{-2.4ex}}
+\newcommand{\kk}{\overdot{k}{-2.8ex}}
+\newcommand{\kz}{\overdot{z}{-2.5ex}}
+\newcommand{\kh}{\overdot{h}{-2.8ex}}
+\newcommand{\kT}{\overdot{T}{-2.9ex}}
+\newcommand{\kS}{\overdot{S}{-2.9ex}}
+\newcommand{\kK}{\overdot{K}{-2.9ex}}
+\newcommand{\kZ}{\overdot{Z}{-2.9ex}}
+\newcommand{\kH}{\overdot{H}{-2.9ex}}
 
 
 % \newcommand{\kt}{ṫ}
@@ -136,12 +172,18 @@
 % \newcommand{\kH}{}
 
 
+\usepackage{calc}
+\newsavebox\CBox
+\newcommand\hcancel[2][0.5pt]{%
+  \ifmmode\sbox\CBox{$#2$}\else\sbox\CBox{#2}\fi%
+  \makebox[0pt][l]{\usebox\CBox}%
+  \rule[0.5\ht\CBox-#1/2]{\wd\CBox}{#1}}
 
+% \newcommand\latclosure[1]{{\timesfont #1}}
+% \newcommand\latclosure[1]{{\sffamily #1}}
+\newcommand\latclosure[1]{#1}
 
-\newcommand\latclosure[1]{\timesfont #1}
-% \newcommand\latclosure[1]{#1}
-
-\newcommand{\latupelif}{\latclosure{A}}
+\newcommand{\latupalif}{\latclosure{A}}
 \newcommand{\latupbe}{\latclosure{B}}
 \newcommand{\latuppe}{\latclosure{P}}
 \newcommand{\latupte}{\latclosure{T}}
@@ -153,7 +195,8 @@
 \newcommand{\latupdal}{\latclosure{D}}
 % \newcommand{\latupzel}{\latclosure{Ž}}
 % \newcommand{\latupzel}{\latclosure{Ż}}
-\newcommand{\latupzel}{\latclosure{Ƶ}}
+\newcommand{\latupzel}{\latclosure{\hcancel[0.1ex]{Z}}}
+% \newcommand{\latupzel}{\latclosure{Ƶ}}
 % \newcommand{\latupzel}{\latclosure{Ⱬ}}
 \newcommand{\latupre}{\latclosure{R}}
 \newcommand{\latupze}{\latclosure{Z}}
@@ -180,7 +223,7 @@
 \newcommand{\latuphe}{\latclosure{H}}
 \newcommand{\latupye}{\latclosure{Y}}
 
-\newcommand{\latdownelif}{\latclosure{a}}
+\newcommand{\latdownalif}{\latclosure{a}}
 \newcommand{\latdownbe}{\latclosure{b}}
 \newcommand{\latdownpe}{\latclosure{p}}
 \newcommand{\latdownte}{\latclosure{t}}
@@ -192,7 +235,8 @@
 \newcommand{\latdowndal}{\latclosure{d}}
 % \newcommand{\latdownzel}{\latclosure{ž}}
 % \newcommand{\latdownzel}{\latclosure{ż}}
-\newcommand{\latdownzel}{\latclosure{ƶ}}
+\newcommand{\latdownzel}{\latclosure{\hcancel[0.1ex]{z}}}
+% \newcommand{\latdownzel}{\latclosure{ƶ}}
 % \newcommand{\latdownzel}{\latclosure{ⱬ}}
 \newcommand{\latdownre}{\latclosure{r}}
 \newcommand{\latdownze}{\latclosure{z}}
