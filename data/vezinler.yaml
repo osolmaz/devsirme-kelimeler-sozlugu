@@ -536,4 +536,107 @@ kipler:
   naaciz: "vâkî"
   nucuuzaat: "vukuat"
 
+---
+kok:
+  - "vav"
+  - "cim"
+  - "be"
+kipler:
+  neciize: "vecîbe"
+  incaaz: "îcâp"
+  munciz: "mûcip"
+  naaciz: "vâcip"
+
+---
+kok:
+  - "cim"
+  - "mim"
+  - "ayn"
+kipler:
+  necz: "cem"
+  naaciz: "câmi"
+  naacizaa: "câmiâ"
+  necaazat: "cemaat"
+  necziyet: "cemiyet"
+  nicaaz: "cîmâ"
+  nucze: "cumâ"
+  incaaz: "icmâ"
+  inticaaz: "içtimâ"
+  mencuuz: "mecmû"
+  mencuuze: "mecmuâ"
+
+---
+kok:
+  - "sad"
+  - "vav"
+  - "be"
+kipler:
+  tenciz: "tasvip"
+  incaazet: "isâbet"
+  muncizet: "musîbet"
+
+---
+kok:
+  - "sad"
+  - "re"
+  - "fe"
+kipler:
+  necz: "sarf"
+  mencez: "masraf"
+  neccaaz: "sarraf"
+  nicz: "sırf"
+  teneccuz: "tasarruf"
+  mutenecciz: "mutasarrıf"
+  tenciz: "tasrif"
+
+---
+kok:
+  - "sad"
+  - "re"
+  - "ha"
+kipler:
+  necaazat: "sarâhat"
+  neciiz: "sarih"
+  nucaazii: "sürâhî"
+  tenciz: "tasrih"
+
+---
+kok:
+  - "sad"
+  - "vav"
+  - "fe"
+kipler:
+  nuczii: "sûfî"
+  teneccuz: "tasavvuf"
+  mutenecciz: "mutasavvıf"
+
+---
+kok:
+  - "ayn"
+  - "be"
+  - "re"
+kipler:
+  niczet: "ibret"
+  nicaaze: "ibâre"
+  nicaazet: "ibâret"
+  inticaaz: "îtibâr"
+  muntecez: "mûteber"
+  tenciz: "tâbir"
+
+---
+kok:
+  - "ha"
+  - "sin"
+  - "be"
+kipler:
+  nicaaz: "hesap"
+  necez: "hasep"
+  naaciz: "hâsip"
+  inticaaz: "ihtisâp"
+  mencuuz: "mahsûp"
+  munaaceze: "muhâsebe"
+  munaaciz: "muhâsip"
+  munteciz: "muhtesip"
+
+
 

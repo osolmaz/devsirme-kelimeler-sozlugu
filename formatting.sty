@@ -1,27 +1,29 @@
 
 
-\newcommand\kipkokentry[3]{%
+\newcommand\kipkokentry[4]{%
   \textbf{\textsf{#1}}\,\,\,%
   {%
     \raisebox{.16ex}{\smaller$[$}%
     \kern 0.07em%
     % \raisebox{.16ex}{\smaller[2][}%
     % {\smaller \textbf{\texttt{#2}}}%
-    {\small\texttt{#2}}%
+    {\small\texttt{\hyperref[#4]{#2}}}%
     % {\texttt{#2}}%
     % {\smaller #2}%
     \kern 0.07em%
     \raisebox{.16ex}{\smaller $]$}%
     % \raisebox{.16ex}{\smaller[2]]}%
   }\,\,\,%
-  {\smaller #3}
+  {#3}
+  % {\smaller #3}
   \newline%
 }
 
-\newcommand\kokkipentry[2]{%
+\newcommand\kokkipentry[3]{%
   \raggedright
   % {\smaller\texttt{\textbf{#1}}}%
-  {\textbf{\sffamily #1}}%
+  {\phantomsection\label{#3}%
+    \textbf{\sffamily #1}}%
   \,\,\,%
   {%
     % \raisebox{.16ex}{\smaller[2][}%
