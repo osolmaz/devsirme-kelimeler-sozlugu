@@ -221,8 +221,8 @@ kipler:
   necz: "devir"
   naaciz: "dâir"
   naacize: "dâire"
-  naacz: "dâr"
-  naaczeyn: "dâreyn"
+  necz: "dâr"
+  neczeyn: "dâreyn"
   nicaaz: "diyâr"
   necezaan: "devrân"
   necze: "devre"
@@ -841,7 +841,7 @@ kok:
   - "be"
 kipler:
   necz: "garp"
-  neciiz: "garîp"
+  neciiz: "garip"
   neciizaan: "garibân"
   nucezaa: "gurebâ"
   nuczet: "gurbet"
@@ -1566,6 +1566,524 @@ kipler:
   necaazet: "kefâret"
   tenciiz: "tekfir"
   nuczaan: "küfrân"
+
+---
+kok:
+  - "kaf"
+  - "sad"
+  - "dal"
+kipler:
+  necz: "kasıt"
+  inticaaz: "iktisât"
+  neciize: "kasîde"
+  mencez: "maksat"
+  mencuuz: "maksut"
+
+---
+kok:
+  - "kaf"
+  - "ayn"
+  - "dal"
+kipler:
+  naacize: "kâide"
+  mencez: "makat"
+  tenaacuz: "tekâüt"
+  mutenaaciz: "mütekâit"
+
+---
+kok:
+  - "ha"
+  - "re"
+  - "kef"
+kipler:
+  necezet: "hareket"
+  necezaat: "harekât"
+  neceze: "hareke"
+  mutenecciz: "müteharrik"
+  tenciiz: "tahrik"
+  munecciz: "muharrik"
+
+---
+kok:
+  - "kef"
+  - "be"
+  - "re"
+kipler:
+  nicz: "kibir"
+  neciiz: "kebir"
+  teneccuz: "tekebbür"
+  mutenecciz: "mütekebbir"
+  enaaciz: "ekâbir"
+  encez: "ekber"
+  nicaaz: "kibar"
+  nuczaa_hemze_: "kübrâ"
+  tenciiz: "tekbir"
+
+---
+kok:
+  - "mim"
+  - "dal"
+  - "dal"
+kipler:
+  necz: "met"
+  necez: "medet"
+  incaaz: "imdât"
+  istincaaz: "istimdât"
+  nuczet: "müddet"
+  tenciiz: "temdit"
+
+---
+kok:
+  - "mim"
+  - "dal"
+  - "ye"
+kipler:
+  tenaacuz: "temâdi"
+  mutenaaciz: "mütemâdi"
+
+---
+kok:
+  - "ha"
+  - "sin"
+  - "sin"
+kipler:
+  nicz: "his"
+  neccaaz: "hassas"
+  incaaz: "ihsâs"
+  mutenecciz: "mütehassis"
+
+---
+kok:
+  - "sad"
+  - "dal"
+  - "kaf"
+kipler:
+  nicz: "sıdk"
+  neceze: "sadaka"
+  necaazet: "sadâkat"
+  naaciz: "sâdık"
+  tenciiz: "tasdik"
+
+---
+kok:
+  - "kaf"
+  - "sad"
+  - "be"
+kipler:
+  neccaaz: "kasap"
+  neceze: "kasaba"
+
+---
+kok:
+  - "sin"
+  - "re"
+  - "re"
+kipler:
+  nicz: "sır"
+  encaaz: "esrar"
+  mencezet: "meserret"
+  nucuuz: "sürûr"
+  mencuuz: "mesrur"
+
+---
+kok:
+  - "the"
+  - "lam"
+  - "the"
+kipler:
+  necaaze: "selâse"
+  neciiz: "salı"
+  naacize: "sâlise"
+  nucaazii: "sülasî"
+  nucuz: "sülüs"
+  tenciiz: "teslis"
+  muneccez: "müselles"
+
+---
+kok:
+  - "shin"
+  - "re"
+  - "ayn"
+kipler:
+  necz: "şer"
+  mencuuz: "meşrû"
+  neciizaat: "şeriat"
+  tenciiz: "teşrî"
+
+---
+kok:
+  - "shin"
+  - "re"
+  - "re"
+kipler:
+  necz: "şer"
+  neciiz: "şerîr"
+  niczet: "şirret"
+
+---
+kok:
+  - "shin"
+  - "ta"
+  - "re"
+kipler:
+  naaciz: "şatır"
+  necaazet: "şetâret"
+
+---
+kok:
+  - "sad"
+  - "ha"
+  - "be"
+kipler:
+  naaciz: "sâhip"
+  encaaz: "ashap"
+  neceze: "sahabe"
+  nuczet: "sohbet"
+  munaaceze: "musâhebe"
+  munaaciz: "musâhip"
+
+---
+kok:
+  - "xa"
+  - "lam"
+  - "sad"
+kipler:
+  naaciz: "hâlis"
+  necaaz: "halas"
+  nucuuz: "hulûs"
+  nucaaze: "hülâsa"
+  incaaz: "ihlâs"
+  munciz: "muhlis"
+  mencez: "mahlas"
+  tenciiziye: "tahlisiye"
+
+---
+kok:
+  - "re"
+  - "vav"
+  - "ha"
+kipler:
+  nucz: "ruh"
+  encaaz: "ervah"
+  neczet: "rahat"
+  istincaazet: "istirahât"
+  mustenciz: "müsterih"
+  naacize: "râyihâ"
+  neczaan: "reyhân"
+  tenaaciiz: "terâvih"
+
+---
+kok:
+  - "ha"
+  - "mim"
+  - "dal"
+kipler:
+  necz: "hamd"
+  muneccez: "Muhammet"
+  mencuuz: "mahmut"
+
+---
+kok:
+  - "xa"
+  - "mim"
+  - "re"
+kipler:
+  necz: "hamr"
+  neciiz: "hamur"
+  mencuuz: "mahmur"
+
+---
+kok:
+  - "xa"
+  - "lam"
+  - "kaf"
+kipler:
+  necz: "halk"
+  necaa_hemze_iz: "halayık"
+  naaciz: "hâlik"
+  niczet: "hilkat"
+  nucz: "hulk"
+  encaaz: "ahlak"
+  mencuuz: "mahluk"
+  mencuuzaat: "mahlukat"
+
+---
+kok:
+  - "vav"
+  - "cim"
+  - "dal"
+kipler:
+  necz: "vecd"
+  nucuuz: "vücut"
+  incaaz: "îcat"
+  munciz: "mûcit"
+  mencuuz: "mevcut"
+  niczaan: "vicdan"
+
+---
+kok:
+  - "ha"
+  - "lam"
+  - "lam"
+kipler:
+  necz: "hal"
+  necaaz: "helal"
+  nucuz: "hulûl"
+  nucze: "hülle"
+  innicaaz: "inhilâl"
+  mencez: "mahal"
+  menceze: "mahalle"
+  mencez: "mehel"
+  mencuuz: "mahlul"
+  munneciz: "münhal"
+  tenciiz: "tahlil"
+
+---
+kok:
+  - "shin"
+  - "ye"
+  - "xa"
+kipler:
+  necz: "şeyh"
+  menaaciz: "meşâyih"
+  menciizaat: "meşîhat"
+
+---
+kok:
+  - "alif"
+  - "he"
+  - "lam"
+kipler:
+  necz: "ehil"
+  necaazi: "ahâli"
+  neczii: "ehlî"
+  necziyet: "ehliyet"
+  teneccuz: "teehhül"
+
+---
+kok:
+  - "kef"
+  - "ye"
+  - "fe"
+kipler:
+  necz: "keyif"
+  necziyet: "keyfiyet"
+
+---
+kok:
+  - "xa"
+  - "lam"
+  - "vav"
+kipler:
+  necaaz: "helâ"
+  naaciz: "hâli"
+  neczet: "halvet"
+  tenciize: "tahliye"
+
+---
+kok:
+  - "sad"
+  - "lam"
+  - "ha"
+kipler:
+  nucz: "sulh"
+  incaaz: "ıslâh"
+  incaazaat: "ıslâhat"
+  inticaaz: "ıstılâh"
+  mencezet: "maslahat"
+  munaaceze: "musâlaha"
+  necaaz: "salâh"
+  necaaziyet: "salâhiyet"
+  naaciz: "sâlih"
+
+---
+kok:
+  - "kaf"
+  - "he"
+  - "re"
+kipler:
+  necz: "kahır"
+  neccaaz: "kahhar"
+  naaciz: "kâhir"
+
+---
+kok:
+  - "kef"
+  - "he"
+  - "nun"
+kipler:
+  naaciz: "kâhin"
+  necaazet: "kehânet"
+
+---
+kok:
+  - "sin"
+  - "be"
+  - "kaf"
+kipler:
+  nicaaz: "sibâk"
+  munaaceze: "müsâbaka"
+  munaaciz: "müsâbık"
+  naaciz: "sâbık"
+  encez: "esbak"
+  naacize: "sâbıka"
+
+---
+kok:
+  - "cim"
+  - "he"
+  - "lam"
+kipler:
+  naaciz: "câhil"
+  necaazet: "cehâlet"
+  nucezaa: "cühelâ"
+  necz: "cehl"
+  mencuuz: "meçhul"
+  tenaacuz: "tecâhül"
+
+---
+kok:
+  - "gayn"
+  - "ye"
+  - "be"
+kipler:
+  necz: "kayıp"
+  naaciz:
+    - "gâip"
+    - "kayıp"
+  neczuuzet: "gaybûbet"
+  nicaaz: "gıyâb"
+  niczet: "gıybet"
+
+---
+kok:
+  - "dal"
+  - "xa"
+  - "lam"
+kipler:
+  necz:
+    - "dahil"
+    - "tahıl"
+  naaciz: "dâhil"
+  necaazet: "dehâlet"
+  nucuuz: "duhûl"
+  incaaz: "ithâl"
+  incaazaat: "ithâlat"
+  mencez: "medhal"
+  munaaceze: "müdâhale"
+  munaaciz: "müdâhil"
+
+---
+kok:
+  - "xa"
+  - "re"
+  - "cim"
+kipler:
+  necz: "harç"
+  naaciz: "hâriç"
+  naaciziye: "hâriciye"
+  nucuuz: "hurûç"
+  incaaz: "ihrâç"
+  incaazaat: "ihrâcat"
+  istincaaz: "istihrâç"
+  mencez: "mahreç"
+
+---
+kok:
+  - "lam"
+  - "vav"
+  - "ha"
+kipler:
+  necze: "levha"
+  naacize: "lâyiha"
+
+---
+kok:
+  - "nun"
+  - "za"
+  - "mim"
+kipler:
+  necz: "nazım"
+  inticaaz: "intizâm"
+  muntecez: "muntazam"
+  mencuuz: "manzum"
+  naaciz: "nâzım"
+  nicaaz: "nizâm"
+  tenciiz: "tanzim"
+  tenciizaat: "tanzimat"
+
+---
+kok:
+  - "vav"
+  - "sad"
+  - "lam"
+kipler:
+  naaciz: "vâsıl"
+  inticaaz: "ittisâl"
+  munteciz: "muttasıl"
+  munaacezet: "muvâsalat"
+  nicaaz:
+    - "sıla"
+    - "visâl"
+  neczet: "vuslat"
+
+---
+kok:
+  - "za"
+  - "lam"
+  - "mim"
+kipler:
+  naaciz: "zâlim"
+  nucz: "zulüm"
+  mencuuz: "mazlum"
+  menaaciz: "mezâlim"
+  nuczet: "zulmet"
+
+---
+kok:
+  - "alif"
+  - "mim"
+  - "re"
+kipler:
+  necz: "emir"
+  naaciz: "âmir"
+  necaaze: "emâre"
+  neciiz: "emîr"
+  nucezaa_hemze_: "ümerâ"
+  mencuuz: "memur"
+  nucuuz: "umûr"
+
+---
+kok:
+  - "lam"
+  - "ze"
+  - "mim"
+kipler:
+  nucuuz: "lüzum"
+  encez: "elzem"
+  inticaaz: "iltizâm"
+  munteciz: "mültezim"
+  incaaz: "ilzâm"
+  istincaaz: "istilzâm"
+  naaciz: "lâzım"
+  nevaaciz: "levâzım"
+  munaaciz: "mülâzım"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
