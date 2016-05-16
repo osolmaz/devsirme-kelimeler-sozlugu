@@ -1378,5 +1378,195 @@ kipler:
   inticaaz: "ihtişâm"
   muntecez: "muhteşem"
 
+---
+kok:
+  - "kaf"
+  - "te"
+  - "lam"
+kipler:
+  necz: "katil"
+  naaciz: "kâtil"
+  nicaaz: "kıtâl"
+  mencuuz: "maktul"
+  munaaceze: "mukâtele"
+  tenciiz: "taktil"
+
+---
+kok:
+  - "za"
+  - "he"
+  - "re"
+kipler:
+  nucuuz: "zuhûr"
+  incaaz: "izhâr"
+  mencez: "mazhar"
+  munaacezet: "müzâheret"
+  munaaciz: "müzâhir"
+  tenaacuz: "tezâhür"
+  naaciz: "zâhir"
+  nevaaciz: "zevâhir"
+  neczaa: "zehrâ"
+  nuczeii: "zührevî"
+
+---
+kok:
+  - "shin"
+  - "re"
+  - "fe"
+kipler:
+  necez: "şeref"
+  encez: "eşref"
+  neceze: "şerefe"
+  neciiz: "şerîf"
+  encaaz: "eşraf"
+  teneccuz: "teşerrüf"
+  tenciiz: "teşrif"
+  muneccez: "müşerref"
+
+---
+kok:
+  - "sin"
+  - "lam"
+  - "mim"
+kipler:
+  necaaz: "selam"
+  incaaz: "islâm"
+  incaaziyet: "islâmiyet"
+  munciz: "müslim"
+  munaaceze: "müsâleme"
+  naaciz: "sâlim"
+  necaazet: "selâmet"
+  necez: "selem"
+  neciiz: "selim"
+  teneccuz: "tesellüm"
+  tenciiz: "teslim"
+  muneccez: "müsellem"
+
+---
+kok:
+  - "shin"
+  - "vav"
+  - "kaf"
+kipler:
+  necz: "şevk"
+  inticaaz: "iştiyak"
+  munteciz: "müştâk"
+  tenciiz: "teşvik"
+  munecciz: "müşevvik"
+
+---
+kok:
+  - "shin"
+  - "fe"
+  - "kaf"
+kipler:
+  neczet: "şefkat"
+  munciz: "müşfik"
+  necez: "şafak"
+
+---
+kok:
+  - "shin"
+  - "he"
+  - "dal"
+kipler:
+  necaazet: "şehâdet"
+  mencuuz: "meşhut"
+  munaaceze: "müşâhede"
+  munaaciz: "müşâhit"
+  naaciz: "şâhit"
+
+---
+kok:
+  - "shin"
+  - "vav"
+  - "re"
+kipler:
+  incaazet: "işâret"
+  istincaaze: "istişâre"
+  mustencez: "müsteşâr"
+  mencezet: "meşveret"
+  munaaceze: "müşâvere"
+  munaaciz: "müşâvir"
+  munciz: "müşîr"
+  nuczaa_hemze_: "şûrâ"
+
+---
+kok:
+  - "kaf"
+  - "lam"
+  - "be"
+kipler:
+  necz: "kalp"
+  innicaaz: "inkılâp"
+  munneciz: "münkalip"
+  nucz: "kulp"
+  mencuuze: "maklûbe"
+
+---
+kok:
+  - "kaf"
+  - "dal"
+  - "mim"
+kipler:
+  neciiz: "kadim"
+  encez: "akdem"
+  necez:
+    - "kadem"
+    - "kıdem"
+  neceze: "kademe"
+  nucz: "kudüm"
+  muneccez: "mukaddem"
+  teneccuz: "takaddüm"
+  tenciiz: "takdim"
+  muneccize: "mukaddime"
+
+---
+kok:
+  - "kaf"
+  - "be"
+  - "ha"
+kipler:
+  necaazet: "kabahat"
+  tenciiz: "takbih"
+
+---
+kok:
+  - "shin"
+  - "kef"
+  - "lam"
+homograf: 1
+kipler:
+  encaaz: "işkil"
+  munciz: "müşkül"
+
+---
+kok:
+  - "shin"
+  - "kef"
+  - "lam"
+homograf: 2
+kipler:
+  necz: "şekil"
+  encaaz: "eşkâl"
+  teneccuz: "teşekkül"
+  mutenecciz: "müteşekkil"
+  tenciiz: "teşkil"
+
+---
+kok:
+  - "kef"
+  - "fe"
+  - "re"
+kipler:
+  nucz: "küfür"
+  naaciz: "kâfir"
+  neceze: "kefere"
+  nuccaaz: "küffâr"
+  necaazet: "kefâret"
+  tenciiz: "tekfir"
+  nuczaan: "küfrân"
+
+
 
 
