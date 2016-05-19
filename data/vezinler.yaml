@@ -2723,7 +2723,90 @@ kipler:
   muneccez: müesses
   munecceze: müessese
 
+---
+kok:
+  - alif
+  - nun
+  - sin
+kipler:
+  neczaan: insan
+  nucziyet: ünsiyet
+  munciz: mûnis
 
+---
+kok:
+  - nun
+  - sin
+  - vav
+kipler:
+  nicaaz: nisâ
+  muneccez: müennes
+  niczaan: nisvan
+
+---
+kok:
+  - alif
+  - lam
+  - fe
+kipler:
+  nuczet: ülfet
+  neciiz: elif
+  inticaaz: îtilaf
+  mencuuz: meluf
+  tenciiz: telif
+  munecciz: müellif
+
+---
+kok:
+  - shin
+  - re
+  - ye
+kipler:
+  nicaaz: şirâ
+  inticaaz: iştirâ
+  munteciz: müşteri
+
+---
+kok:
+  - alif
+  - sin
+  - fe
+kipler:
+  necez: esef
+  munecciz: müessif
+  teneccuz: teessüf
+  mutenecciz: müteessif
+
+---
+kok:
+  - alif
+  - the
+  - re
+kipler:
+  necez: eser
+  encaaz: âsar
+  teneccuz: teessür
+  mutenecciz: müteessir
+  tenciiz: têsir
+  munecciz: müessir
+
+---
+kok:
+  - ayn
+  - sad
+  - re
+kipler:
+  nucaaze: usâre
+  necz: asır
+  munaaciz: muâsır
+
+---
+kok:
+  - ayn
+  - nun
+  - sad
+  - re
+kipler:
 
 
 
