@@ -3416,7 +3416,7 @@ kok:
   - dal
 kipler:
   encez: esvet
-  muncezze: müsvedde
+  munecezze: müsvedde
   neczaa: sevdâ
 
 ---
@@ -3429,26 +3429,98 @@ kipler:
   neciiz: kavî
   nucez: kuvâ
   nucze: kuvve
-  tencize: takviye
+  tenciize: takviye
   muneccez: mukavvâ
 
+---
+kok:
+  - the
+  - vav
+  - be
+kipler:
+  necaaz: sevap
+  encaaz: esvap
+  menceze: mesâbe
 
+---
+kok:
+  - fe
+  - re
+  - shin
+kipler:
+  mencuuzaat: mefruşat
+  neccaaz: faraş
+  mustenceze: müstefreşe
+  tenciiz: tefriş
 
+---
+kok:
+  - fe
+  - ye
+  - dal
+kipler:
+  naacize: fayda
+  incaaze: ifâde
+  munciz: müfit
+  istincaaze: istifâde
+  mustenciz: müstefit
 
+---
+kok:
+  - fe
+  - re
+  - dad
+kipler:
+  necz: farz
+  necezaan: faraza
+  necezii: farazî
+  neciize: farîza
+  mencuuz: mefruz
 
+---
+kok:
+  - fe
+  - te
+  - nun
+kipler:
+  nicze: fitne
+  neccaaz: fettan
+  mencuuz: meftun
 
+---
+kok:
+  - fe
+  - te
+  - ha
+kipler:
+  necz: fetih
+  naaciz: fâtih
+  naacize: fâtiha
+  necze: fetha
+  neccaaz: fettah
+  nucuuzaat: fütuhat
+  mincaaz: miftah
+  istincaaz: siftah
 
+---
+kok:
+  - re
+  - cim
+  - mim
+kipler:
+  necz: recm
+  neciiz: racim
 
-
-
-
-
-
-
-
-
-
-
+---
+kok:
+  - alif
+  - cim
+  - re
+kipler:
+  necz: ecir
+  incaaz: îcar
+  mustenciz: müstecir
+  nuczet: ücret
 
 
 
