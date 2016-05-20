@@ -3173,7 +3173,12 @@ kok:
   - dal
   - dal
 kipler:
+  necz: add
+  necez: adet
+  incaazii: idâdî
   mutenecciz: müteaddit
+  istincaaz: istîdat
+  tenciiz: tâdat
 
 ---
 kok:
@@ -3334,7 +3339,7 @@ kipler:
 kok:
   - he
   - ze
-  - alif
+  - hemze
 kipler:
   istincaaz: istihzâ
   mustenciz: müstehzî
@@ -3521,6 +3526,641 @@ kipler:
   incaaz: îcar
   mustenciz: müstecir
   nuczet: ücret
+
+---
+kok:
+  - te
+  - re
+  - cim
+  - mim
+kipler:
+  neczuzaan: tercüman
+  neczeze: tercüme
+  munecziz: mütercim
+
+---
+kok:
+  - sin
+  - lam
+kipler:
+  nicnice: silsile
+  mutenecnic: müteselsil
+  tenecnuc: teselsül
+
+---
+kok:
+  - kaf
+  - he
+kipler:
+  neczeze: kahkaha
+
+---
+kok:
+  - fe
+  - lam
+  - sin
+  - fe
+kipler:
+  neczeze: felsefe
+
+---
+kok:
+  - sin
+  - fe
+  - sad
+  - ta
+kipler:
+  neczeze: safsata
+
+---
+kok:
+  - ayn
+  - re
+  - be
+  - dal
+kipler:
+  neczeze: arbede
+
+---
+kok:
+  - cim
+  - sin
+  - mim
+kipler:
+  nicz: cisim
+  necaazet: cesâmet
+  neciiz: cesim
+  muneccez: mücessem
+  teneccuz: tecessüm
+
+---
+kok:
+  - cim
+  - the
+  - the
+kipler:
+  nucze: cüsse
+
+
+---
+kok:
+  - cim
+  - sin
+  - dal
+kipler:
+  necez: ceset
+
+---
+kok:
+  - cim
+  - vav
+  - he
+  - re
+kipler:
+  neczez: cevher
+  necaaziz: cevâhir
+  muneczez: mücevher
+
+---
+kok:
+  - ayn
+  - cim
+  - ze
+kipler:
+  necz: acz
+  naaciz: âciz
+  necuuze: acûze
+  muncize: mûcize
+  tenciiz: tâciz
+
+---
+kok:
+  - te
+  - cim
+  - re
+kipler:
+  naaciz: tâcir
+  nicaazet: ticâret
+  nuccaaz: tüccar
+
+---
+kok:
+  - be
+  - sad
+kipler:
+  tenecnuc: tabasbus
+
+---
+kok:
+  - za
+  - re
+  - fe
+kipler:
+  necz: zarf
+  mencuuz: mazruf
+  necaazet: zarâfet
+  neciiz: zarif
+  nucezaa: zürefâ
+
+---
+kok:
+  - ze
+  - vav
+  - cim
+kipler:
+  necz: zevç
+  inticaaz: izdivaç
+  necze: zevce
+
+---
+kok:
+  - zel
+  - re
+  - ayn
+kipler:
+  nicaazet: ziraat
+  menceze: mezrâ
+
+---
+kok:
+  - zel
+  - re
+  - re
+kipler:
+  necze: zerre
+  nucziyet: zürriyet
+
+---
+kok:
+  - zel
+  - re
+  - vav
+kipler:
+  nicze: zirve
+
+---
+kok:
+  - ze
+  - vav
+  - lam
+kipler:
+  necaaz: zeval
+  incaaze: izâle
+  naaciz: zâil
+  necaazii: zavallı
+
+---
+kok:
+  - zel
+  - vav
+  - kaf
+kipler:
+  necz: zevk
+
+---
+kok:
+  - ze
+  - ye
+  - te
+kipler:
+  neczuun: zeytin
+  muneccez: mezgit
+
+---
+kok:
+  - ayn
+  - vav
+  - re
+kipler:
+  necz: ar
+  naaciziyetii: eğreti
+  naaciziyet: âriyet
+  istincaaze: istiâre
+  mustencez: müstear
+
+---
+kok:
+  - gayn
+  - re
+  - kaf
+kipler:
+  necz: gark
+  istincaaz: istiğrak
+  mustencez: müstağrak
+
+---
+kok:
+  - dal
+  - ayn
+  - vav
+kipler:
+  neczet: dâvet
+  necez: dâvâ
+  neczetiye: dâvetiye
+  nucaaz: duâ
+  inticaaz: iddiâ
+  munteciz: müddeî
+  istincaaz: istidâ
+
+---
+kok:
+  - dal
+  - lam
+  - lam
+kipler:
+  neciiz: delil
+  necaazet: delâlet
+  istincaaz: istidlal
+  muneccez: müdellel
+  neccaaz: tellal
+
+---
+kok:
+  - lam
+  - mim
+  - ha
+kipler:
+  tenciiz: telmih
+
+---
+kok:
+  - dal
+  - lam
+  - kaf
+kipler:
+  neccaaz: tellak
+  necz: delk
+
+---
+kok:
+  - mim
+  - shin
+  - ye
+kipler:
+  tenaacuz: temâşâ
+
+---
+kok:
+  - lam
+  - kaf
+  - nun
+kipler:
+  tenciiz: telkin
+
+---
+kok:
+  - nun
+  - be
+  - he
+kipler:
+  inticaaz: intibah
+  tenciiz: tembih
+
+---
+kok:
+  - ta
+  - be
+  - ayn
+kipler:
+  necz: tab
+  innicaaz: intibâ
+  menceze: matbaa
+  mencuuz: matbû
+  tenciizaat: tabiat
+  tenciizaatii: tabii
+
+---
+kok:
+  - ta
+  - be
+  - kaf
+kipler:
+  necez: tabak
+  innicaaz: intibak
+  munaacezet: mutâbakat
+  munaaciz: mutâbık
+  neceze: tabaka
+  tenciiz: tatbik
+  tenciizaat: tatbikat
+  niczaan: tıpkı
+
+---
+kok:
+  - nun
+  - he
+  - vav
+kipler:
+  nicaazet: nihâyet
+  incaaz: inhâ
+  inticaaz: intihâ
+  muntecez: müntehâ
+  nicaazii: nihaî
+  mutenaaciz: mütenâhî
+
+---
+kok:
+  - nun
+  - fe
+  - ayn
+kipler:
+  naaciz: nâfi
+  inticaaz: intifâ
+  mencezet: menfaat
+
+---
+kok:
+  - nun
+  - fe
+  - lam
+kipler:
+  naacize: nâfile
+
+---
+kok:
+  - mim
+  - cim
+  - dal
+kipler:
+  neciiziye: mecîdiye
+  naaciz: mâcit
+  tenciiz: temcit
+
+---
+kok:
+  - nun
+  - fe
+  - zel
+kipler:
+  nucuuz: nüfuz
+  incaaz: infaz
+  mencez: menfez
+  naaciz: nâfiz
+  tenciiz: tenfiz
+
+---
+kok:
+  - cim
+  - lam
+  - sin
+kipler:
+  nucuuz: cülus
+  necze: celse
+  menciz: meclis
+
+---
+kok:
+  - cim
+  - re
+  - ha
+kipler:
+  necz: cerh
+  necaazet: cerahat
+  neciize: ceriha
+  neccaaz: cerrah
+  mencuuz: mecruh
+
+---
+kok:
+  - cim
+  - zel
+  - be
+kipler:
+  necz: cezb
+  naaciz: câzip
+  naacize: câzibe
+  necze: cezbe
+  mencuuz: meczup
+
+---
+kok:
+  - cim
+  - re
+  - ye
+kipler:
+  necezaan: cereyan
+  naaciz: cârî
+  naacize: câriye
+  incaaz: icrâ
+  incaazaat: icraat
+  mencez: mecrâ
+
+---
+kok:
+  - cim
+  - nun
+  - nun
+kipler:
+  nicz: cin
+  neciiz: cenin
+  neczet: cennet
+  niczet: cinnet
+  mencuuz: mecnun
+
+---
+kok:
+  - cim
+  - re
+  - hemze
+kipler:
+  nuczet: cüret
+
+---
+kok:
+  - ha
+  - sad
+  - lam
+kipler:
+  nucuuz: husul
+  naaciz: hâsıl
+  naacize: hâsıla
+  naacizaat: hâsılat
+  nevceze: havsala
+  istincaaz: istihsal
+  mustenciz: müstahsil
+  mencuuz: mahsul
+  tenciiz: tahsil
+
+---
+kok:
+  - he
+  - vav
+  - ye
+kipler:
+  naacize: havya
+
+---
+kok:
+  - kef
+  - re
+  - he
+kipler:
+  necz: kerh
+  incaaz: ikrah
+  istincaaz: istikrah
+  mustencez: müstekreh
+  necaazet: kerahat
+  mencuuz: mekruh
+
+---
+kok:
+  - mim
+  - lam
+  - lam
+kipler:
+  necuuz: melul
+  necaaz: melal
+
+---
+kok:
+  - kef
+  - the
+  - fe
+kipler:
+  necaazet: kesâfet
+  neciiz: kesif
+  menceze: meksefe
+  tenaacuz: tekâsüf
+  tenciiz: teksif
+
+---
+kok:
+  - kaf
+  - re
+  - re
+kipler:
+  necaaz: karar
+  incaaz: ikrar
+  istincaaz: istikrar
+  tenciiz: takrir
+  muneccez: mukarrer
+
+---
+kok:
+  - kef
+  - re
+  - re
+kipler:
+  necze: kere
+  neczaat: kerrat
+  teneccuz: tekerrür
+  tenaacuz: tekrar
+  muneccez: mükerrer
+
+---
+kok:
+  - kaf
+  - lam
+  - lam
+kipler:
+  enceziyet: ekalliyet
+  istincaaz: istiklal
+  mustenciz: müstakil
+
+---
+kok:
+  - ayn
+  - mim
+  - lam
+kipler:
+  necez: amel
+  encaaz: amal
+  enceziyet: ameliyat
+  naaciz: âmil
+  neceze: amele
+  incaaz: îmal
+  incaazaat: îmalat
+  istincaaz: istimal
+  mustencez: müstamel
+  mencuuz: mâmul
+  munaaceze: muâmele
+  tenaacuz: teâmül
+
+---
+kok:
+  - ha
+  - sin
+  - nun
+kipler:
+  nucz: hüsn
+  encez: ahsen
+  necezaat: hasenat
+  incaaz: ihsan
+  munciz: muhsin
+  istincaaz: istihsan
+  necez: hasan
+  tenciiz: tahsin
+  nuceyz: hüseyin
+
+---
+kok:
+  - dad
+  - re
+  - re
+kipler:
+  necaaz: zarar
+  mencezet: mazarrat
+  munciz: muzır
+  necuuzet: zaruret
+
+---
+kok:
+  - ze
+  - vav
+  - ye
+kipler:
+  naacize: zâviye
+  innicaaz: inzivâ
+  munneciz: münzevî
+
+---
+kok:
+  - nun
+  - xa
+  - be
+kipler:
+  inticaaz: intihap
+  munteciz: müntehip
+
+---
+kok:
+  - nun
+  - shin
+  - hemze
+kipler:
+  neczet: neşet
+  incaaz: inşâ
+  mencez: menşe
+  naaciz: nâşi
+
+---
+kok:
+  - be
+  - nun
+  - ye
+kipler:
+  nicaaz: binâ
+  naaciz: bâni
+  nuczaan: bünyan
+  nucze: bünye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
