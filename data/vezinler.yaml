@@ -4739,5 +4739,61 @@ kipler:
   nucz: ufuk
   encaaz: âfak
 
+---
+kok:
+  - alif
+  - kef
+  - dal
+kipler:
+  tenciiz: têkit
+
+---
+kok:
+  - alif
+  - lam
+  - he
+kipler:
+  nicaaz: ilah
+  neccaaz: Allah
+  nucuuziyet: ulûhiyet
+  nicaaziyet: ilâhiyet
+
+---
+kok:
+  - alif
+  - lam
+  - mim
+kipler:
+  necez: elem
+  neciiz: elim
+
+---
+kok:
+  - alif
+  - mim
+  - lam
+kipler:
+  necez: elem
+  teneccuz: teemmül
+
+---
+kok:
+  - alif
+  - mim
+  - mim
+kipler:
+  nicaaz: imam
+  nuczet: ümmet
+  incaaze: imâme
+  nuczii: ümmî
+
+
+
+
+
+
+
+
+
 
 
