@@ -3229,10 +3229,25 @@ kok:
   - ha
   - be
   - be
+homograf: 1
 kipler:
   necze: habbe
   necz: hap
   nucuuzaat: hubûbat
+
+---
+kok:
+  - ha
+  - be
+  - be
+homograf: 2
+kipler:
+  encaaz: ahbap
+  neciiz: habip
+  mencezet: muhabbet
+  mencuuz: mahbup
+  encizaa: ehibbâ
+
 
 ---
 kok:
@@ -11732,7 +11747,21 @@ kok:
 kipler:
   necz: zeyil
 
+---
+kok:
+  - zel
+  - ayn
+  - nun
+kipler:
+  incaaz: izan
 
+---
+kok:
+  - zel
+  - xa
+  - re
+kipler:
+  neciize: zahire
 
 
 
