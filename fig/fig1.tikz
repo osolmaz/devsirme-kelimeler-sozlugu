@@ -1,5 +1,7 @@
 \begin{tikzpicture}
+{
   \bfseries
+  % \sffamily
   \small
   \node(01_1)[text depth=0.25ex, text height=2.5ex, text centered] at (0   , 0) {\latupalif};
   \node(02_1)[text depth=0.25ex, text height=2.5ex, text centered] at (5   , 0) {\latupbe};
@@ -34,7 +36,9 @@
   \node(31_1)[text depth=0.25ex, text height=2.5ex, text centered] at (150 , 0) {\latupvav};
   \node(32_1)[text depth=0.25ex, text height=2.5ex, text centered] at (155 , 0) {\latuphe};
   \node(33_1)[text depth=0.25ex, text height=2.5ex, text centered] at (160 , 0) {\latupye};
-
+}
+{
+  \bfseries
   \scriptsize
   \node(01_2)[text depth=2.25ex, text height=2ex, text centered] at (0   , 20) {\aralif};
   \node(02_2)[text depth=2.25ex, text height=2ex, text centered] at (5   , 20) {\arbe};
@@ -69,9 +73,7 @@
   \node(31_2)[text depth=2.25ex, text height=2ex, text centered] at (150 , 20) {\arvav};
   \node(32_2)[text depth=2.25ex, text height=2ex, text centered] at (155 , 20) {\arhe};
   \node(33_2)[text depth=2.25ex, text height=2ex, text centered] at (160 , 20) {\arye};
-
-  \draw[->](01_2) edge (01_1);
-
+}
 
 \draw[->] (01_2) edge (01_1);
 \draw[->] (02_2) edge (02_1);
