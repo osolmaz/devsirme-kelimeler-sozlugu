@@ -1,0 +1,144 @@
+\begin{tikzpicture}
+  \bfseries
+  \small
+  \node(01_1)[text depth=0.25ex, text height=2.5ex, text centered] at (0   , 0) {\latupalif};
+  \node(02_1)[text depth=0.25ex, text height=2.5ex, text centered] at (5   , 0) {\latupbe};
+  \node(03_1)[text depth=0.25ex, text height=2.5ex, text centered] at (10  , 0) {\latuppe};
+  \node(04_1)[text depth=0.25ex, text height=2.5ex, text centered] at (15  , 0) {\latupthe};
+  \node(05_1)[text depth=0.25ex, text height=2.5ex, text centered] at (20  , 0) {\latupte};
+  \node(06_1)[text depth=0.25ex, text height=2.5ex, text centered] at (25  , 0) {\latupcim};
+  \node(07_1)[text depth=0.25ex, text height=2.5ex, text centered] at (30  , 0) {\latupchim};
+  \node(08_1)[text depth=0.25ex, text height=2.5ex, text centered] at (35  , 0) {\latupha};
+  \node(09_1)[text depth=0.25ex, text height=2.5ex, text centered] at (40  , 0) {\latupxa};
+  \node(10_1)[text depth=0.25ex, text height=2.5ex, text centered] at (45  , 0) {\latupdal};
+  \node(11_1)[text depth=0.25ex, text height=2.5ex, text centered] at (50  , 0) {\latupzel};
+  \node(12_1)[text depth=0.25ex, text height=2.5ex, text centered] at (55  , 0) {\latupre};
+  \node(13_1)[text depth=0.25ex, text height=2.5ex, text centered] at (60  , 0) {\latupze};
+  \node(14_1)[text depth=0.25ex, text height=2.5ex, text centered] at (65  , 0) {\latupje};
+  \node(15_1)[text depth=0.25ex, text height=2.5ex, text centered] at (70  , 0) {\latupsin};
+  \node(16_1)[text depth=0.25ex, text height=2.5ex, text centered] at (75  , 0) {\latupshin};
+  \node(17_1)[text depth=0.25ex, text height=2.5ex, text centered] at (80  , 0) {\latupsad};
+  \node(18_1)[text depth=0.25ex, text height=2.5ex, text centered] at (85  , 0) {\latupdad};
+  \node(19_1)[text depth=0.25ex, text height=2.5ex, text centered] at (90  , 0) {\latupta};
+  \node(20_1)[text depth=0.25ex, text height=2.5ex, text centered] at (95  , 0) {\latupza};
+  \node(21_1)[text depth=0.25ex, text height=2.5ex, text centered] at (100 , 0) {\latupayn};
+  \node(22_1)[text depth=0.25ex, text height=2.5ex, text centered] at (105 , 0) {\latupgayn};
+  \node(23_1)[text depth=0.25ex, text height=2.5ex, text centered] at (110 , 0) {\latupfe};
+  \node(24_1)[text depth=0.25ex, text height=2.5ex, text centered] at (115 , 0) {\latupkaf};
+  \node(25_1)[text depth=0.25ex, text height=2.5ex, text centered] at (120 , 0) {\latupkef};
+  \node(26_1)[text depth=0.25ex, text height=2.5ex, text centered] at (125 , 0) {\latupgef};
+  \node(27_1)[text depth=0.25ex, text height=2.5ex, text centered] at (130 , 0) {\latupnef};
+  \node(28_1)[text depth=0.25ex, text height=2.5ex, text centered] at (135 , 0) {\latuplam};
+  \node(29_1)[text depth=0.25ex, text height=2.5ex, text centered] at (140 , 0) {\latupmim};
+  \node(30_1)[text depth=0.25ex, text height=2.5ex, text centered] at (145 , 0) {\latupnun};
+  \node(31_1)[text depth=0.25ex, text height=2.5ex, text centered] at (150 , 0) {\latupvav};
+  \node(32_1)[text depth=0.25ex, text height=2.5ex, text centered] at (155 , 0) {\latuphe};
+  \node(33_1)[text depth=0.25ex, text height=2.5ex, text centered] at (160 , 0) {\latupye};
+
+  \scriptsize
+  \node(01_2)[text depth=2.25ex, text height=2ex, text centered] at (0   , 20) {\aralif};
+  \node(02_2)[text depth=2.25ex, text height=2ex, text centered] at (5   , 20) {\arbe};
+  \node(03_2)[text depth=2.25ex, text height=2ex, text centered] at (10  , 20) {\arpe};
+  \node(04_2)[text depth=2.25ex, text height=2ex, text centered] at (15  , 20) {\arthe};
+  \node(05_2)[text depth=2.25ex, text height=2ex, text centered] at (20  , 20) {\arte};
+  \node(06_2)[text depth=2.25ex, text height=2ex, text centered] at (25  , 20) {\arcim};
+  \node(07_2)[text depth=2.25ex, text height=2ex, text centered] at (30  , 20) {\archim};
+  \node(08_2)[text depth=2.25ex, text height=2ex, text centered] at (35  , 20) {\arha};
+  \node(09_2)[text depth=2.25ex, text height=2ex, text centered] at (40  , 20) {\arxa};
+  \node(10_2)[text depth=2.25ex, text height=2ex, text centered] at (45  , 20) {\ardal};
+  \node(11_2)[text depth=2.25ex, text height=2ex, text centered] at (50  , 20) {\arzel};
+  \node(12_2)[text depth=2.25ex, text height=2ex, text centered] at (55  , 20) {\arre};
+  \node(13_2)[text depth=2.25ex, text height=2ex, text centered] at (60  , 20) {\arze};
+  \node(14_2)[text depth=2.25ex, text height=2ex, text centered] at (65  , 20) {\arje};
+  \node(15_2)[text depth=2.25ex, text height=2ex, text centered] at (70  , 20) {\arsin};
+  \node(16_2)[text depth=2.25ex, text height=2ex, text centered] at (75  , 20) {\arshin};
+  \node(17_2)[text depth=2.25ex, text height=2ex, text centered] at (80  , 20) {\arsad};
+  \node(18_2)[text depth=2.25ex, text height=2ex, text centered] at (85  , 20) {\ardad};
+  \node(19_2)[text depth=2.25ex, text height=2ex, text centered] at (90  , 20) {\arta};
+  \node(20_2)[text depth=2.25ex, text height=2ex, text centered] at (95  , 20) {\arza};
+  \node(21_2)[text depth=2.25ex, text height=2ex, text centered] at (100 , 20) {\arayn};
+  \node(22_2)[text depth=2.25ex, text height=2ex, text centered] at (105 , 20) {\argayn};
+  \node(23_2)[text depth=2.25ex, text height=2ex, text centered] at (110 , 20) {\arfe};
+  \node(24_2)[text depth=2.25ex, text height=2ex, text centered] at (115 , 20) {\arkaf};
+  \node(25_2)[text depth=2.25ex, text height=2ex, text centered] at (120 , 20) {\arkef};
+  \node(26_2)[text depth=2.25ex, text height=2ex, text centered] at (125 , 20) {\argef};
+  \node(27_2)[text depth=2.25ex, text height=2ex, text centered] at (130 , 20) {\arnef};
+  \node(28_2)[text depth=2.25ex, text height=2ex, text centered] at (135 , 20) {\arlam};
+  \node(29_2)[text depth=2.25ex, text height=2ex, text centered] at (140 , 20) {\armim};
+  \node(30_2)[text depth=2.25ex, text height=2ex, text centered] at (145 , 20) {\arnun};
+  \node(31_2)[text depth=2.25ex, text height=2ex, text centered] at (150 , 20) {\arvav};
+  \node(32_2)[text depth=2.25ex, text height=2ex, text centered] at (155 , 20) {\arhe};
+  \node(33_2)[text depth=2.25ex, text height=2ex, text centered] at (160 , 20) {\arye};
+
+  \draw[->](01_2) edge (01_1);
+
+
+\draw[->] (01_2) edge (01_1);
+\draw[->] (02_2) edge (02_1);
+\draw[->] (03_2) edge (03_1);
+\draw[->] (04_2) edge (04_1);
+\draw[->] (05_2) edge (05_1);
+\draw[->] (06_2) edge (06_1);
+\draw[->] (07_2) edge (07_1);
+\draw[->] (08_2) edge (08_1);
+\draw[->] (09_2) edge (09_1);
+\draw[->] (10_2) edge (10_1);
+\draw[->] (11_2) edge (11_1);
+\draw[->] (12_2) edge (12_1);
+\draw[->] (13_2) edge (13_1);
+\draw[->] (14_2) edge (14_1);
+\draw[->] (15_2) edge (15_1);
+\draw[->] (16_2) edge (16_1);
+\draw[->] (17_2) edge (17_1);
+\draw[->] (18_2) edge (18_1);
+\draw[->] (19_2) edge (19_1);
+\draw[->] (20_2) edge (20_1);
+\draw[->] (21_2) edge (21_1);
+\draw[->] (22_2) edge (22_1);
+\draw[->] (23_2) edge (23_1);
+\draw[->] (24_2) edge (24_1);
+\draw[->] (25_2) edge (25_1);
+\draw[->] (27_2) edge (27_1);
+\draw[->] (26_2) edge (26_1);
+\draw[->] (28_2) edge (28_1);
+\draw[->] (29_2) edge (29_1);
+\draw[->] (30_2) edge (30_1);
+\draw[->] (31_2) edge (31_1);
+\draw[->] (32_2) edge (32_1);
+\draw[->] (33_2) edge (33_1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{tikzpicture}

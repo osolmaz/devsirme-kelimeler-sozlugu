@@ -6102,6 +6102,14 @@ kipler:
 ---
 kok:
   - fe
+  - alif
+  - lam
+kipler:
+  necz: fal
+
+---
+kok:
+  - fe
   - cim
   - alif
 kipler:

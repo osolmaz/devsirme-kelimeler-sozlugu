@@ -16,7 +16,7 @@ pdf: $(PDF)
 #
 #
 %.pdf: %.tex
-	xelatex $<
+	xelatex --shell-escape $<
 
 generate-all: kip2kok kok2kip
 
