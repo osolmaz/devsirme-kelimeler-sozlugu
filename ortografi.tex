@@ -1,6 +1,9 @@
 \newcommand\uyumluharftablo[4]{%
   % \renewcommand{\arraystretch}{3}
-  \begin{tabular}{|>{\centering}p{0.15\textwidth}|>{\centering}p{0.15\textwidth}|>{\centering}p{0.25\textwidth}|>{\timesfont\centering}p{0.25\textwidth}|}
+  \begin{tabular}{|>{\centering}p{0.15\textwidth}%
+    |>{\centering}p{0.15\textwidth}%
+    |>{\centering}p{0.25\textwidth}%
+    |>{\centering}p{0.25\textwidth}|}
     \hline
     \footnotesize Eski yazı harf
     & \footnotesize Vekil harf
@@ -11,11 +14,38 @@
     \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #1 \end{minipage}
     & \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #2 \end{minipage}
     & #3
-    & #4
+    & \timesfont #4
       \tabularnewline
     \hline
   \end{tabular}%
 }
+
+\newcommand\hariciharftablo[5]{%
+  % \renewcommand{\arraystretch}{3}
+  \begin{tabular}{|>{\centering}p{0.15\textwidth}%
+    |>{\centering}p{0.15\textwidth}%
+    |>{\centering}p{0.20\textwidth}%
+    |>{\centering}p{0.17\textwidth}%
+    |>{\centering}p{0.17\textwidth}%
+    |}
+    \hline
+    \footnotesize Eski yazı harf
+    & \footnotesize Vekil harf
+    & \footnotesize Eski yazı harf ismi
+    & \footnotesize Türkçe telaffuz
+    & \footnotesize Arapça telaffuz
+      \tabularnewline
+      \hline
+    \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #1 \end{minipage}
+    & \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #2 \end{minipage}
+    & #3
+    & \timesfont #4
+    & \timesfont #5
+      \tabularnewline
+    \hline
+  \end{tabular}%
+}
+
 
 \chapter{Ortografi}
 
@@ -77,7 +107,7 @@
 \subsection*{Gef}
 \uyumluharftablo{\argef}{\latupgef\latdowngef}{\isimgef}{\trtlfgef}
 
-\subsection*{Nef}
+\subsection*{Nef / Sağır Kef}
 \uyumluharftablo{\arnef}{\latupnef\latdownnef}{\isimnef}{\trtlfnef}
 
 \subsection*{Lam}
@@ -103,24 +133,34 @@
 \section{Türk Diline Harici Sesler ve Harfler}
 
 \subsection*{Peltek Se}
+\hariciharftablo{\arthe}{\latupthe\latdownthe}{\isimthe}{\trtlfthe}{\artlfthe}
 
 \subsection*{Ha}
+\hariciharftablo{\arha}{\latupha\latdownha}{\isimha}{\trtlfha}{\artlfha}
 
 \subsection*{Hı}
+\hariciharftablo{\arxa}{\latupxa\latdownxa}{\isimxa}{\trtlfxa}{\artlfxa}
 
 \subsection*{Zel}
+\hariciharftablo{\arzel}{\latupzel\latdownzel}{\isimzel}{\trtlfzel}{\artlfzel}
 
 \subsection*{Sad}
+\hariciharftablo{\arsad}{\latupsad\latdownsad}{\isimsad}{\trtlfsad}{\artlfsad}
 
 \subsection*{Dad}
+\hariciharftablo{\ardad}{\latupdad\latdowndad}{\isimdad}{\trtlfdad}{\artlfdad}
 
 \subsection*{Ta}
+\hariciharftablo{\arta}{\latupta\latdownta}{\isimta}{\trtlfta}{\artlfta}
 
 \subsection*{Za}
+\hariciharftablo{\arza}{\latupza\latdownza}{\isimza}{\trtlfza}{\artlfza}
 
 \subsection*{Ayn}
+\hariciharftablo{\arayn}{\latupayn\latdownayn}{\isimayn}{\trtlfayn}{\artlfayn}
 
 \subsection*{Kaf}
+\hariciharftablo{\arkaf}{\latupkaf\latdownkaf}{\isimkaf}{\trtlfkaf}{\artlfkaf}
 
 
 % \section{Eski Yazı}
