@@ -1,12 +1,127 @@
+\newcommand\uyumluharftablo[4]{%
+  % \renewcommand{\arraystretch}{3}
+  \begin{tabular}{|>{\centering}p{0.15\textwidth}|>{\centering}p{0.15\textwidth}|>{\centering}p{0.25\textwidth}|>{\timesfont\centering}p{0.25\textwidth}|}
+    \hline
+    \footnotesize Eski yazı harf
+    & \footnotesize Vekil harf
+    & \footnotesize Eski yazı harf ismi
+    & \footnotesize Türkçe telaffuz
+      \tabularnewline
+      \hline
+    \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #1 \end{minipage}
+    & \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #2 \end{minipage}
+    & #3
+    & #4
+      \tabularnewline
+    \hline
+  \end{tabular}%
+}
+
 \chapter{Ortografi}
 
 % \includesvg[width=\textwidth]{./fig/fig1}
 
 % \input{./fig/fig1.tex}
 \includegraphics[width=\textwidth]{./fig/fig1.tikz}
-\section{Türk Diliyle Uyumlu Harfler}
+\section{Türk Diliyle Uyumlu Sesler ve Harfler}
 
-\section{Türk Diline Harici Harfler}
+\subsection*{Elif}
+
+
+\uyumluharftablo{\aralif}{\latupalif\latdownalif}{\isimalif}{\trtlfalif}
+
+\subsection*{Be}
+\uyumluharftablo{\arbe}{\latupbe\latdownbe}{\isimbe}{\trtlfbe}
+
+
+\subsection*{Pe}
+\uyumluharftablo{\arpe}{\latuppe\latdownpe}{\isimpe}{\trtlfpe}
+
+\subsection*{Te}
+\uyumluharftablo{\arte}{\latupte\latdownte}{\isimte}{\trtlfte}
+
+\subsection*{Cim}
+\uyumluharftablo{\arcim}{\latupcim\latdowncim}{\isimcim}{\trtlfcim}
+
+\subsection*{Çim}
+\uyumluharftablo{\archim}{\latupchim\latdownchim}{\isimchim}{\trtlfchim}
+
+
+\subsection*{Dal}
+\uyumluharftablo{\ardal}{\latupdal\latdowndal}{\isimdal}{\trtlfdal}
+
+\subsection*{Re}
+\uyumluharftablo{\arre}{\latupre\latdownre}{\isimre}{\trtlfre}
+
+\subsection*{Ze}
+\uyumluharftablo{\arze}{\latupze\latdownze}{\isimze}{\trtlfze}
+
+\subsection*{Je}
+\uyumluharftablo{\arje}{\latupje\latdownje}{\isimje}{\trtlfje}
+
+\subsection*{Sin}
+\uyumluharftablo{\arsin}{\latupsin\latdownsin}{\isimsin}{\trtlfsin}
+
+\subsection*{Şın}
+\uyumluharftablo{\arshin}{\latupshin\latdownshin}{\isimshin}{\trtlfshin}
+
+\subsection*{Gayn}
+\uyumluharftablo{\argayn}{\latupgayn\latdowngayn}{\isimgayn}{\trtlfgayn}
+
+\subsection*{Fe}
+\uyumluharftablo{\arfe}{\latupfe\latdownfe}{\isimfe}{\trtlffe}
+
+\subsection*{Kef}
+\uyumluharftablo{\arkef}{\latupkef\latdownkef}{\isimkef}{\trtlfkef}
+
+\subsection*{Gef}
+\uyumluharftablo{\argef}{\latupgef\latdowngef}{\isimgef}{\trtlfgef}
+
+\subsection*{Nef}
+\uyumluharftablo{\arnef}{\latupnef\latdownnef}{\isimnef}{\trtlfnef}
+
+\subsection*{Lam}
+\uyumluharftablo{\arlam}{\latuplam\latdownlam}{\isimlam}{\trtlflam}
+
+\subsection*{Mim}
+\uyumluharftablo{\armim}{\latupmim\latdownmim}{\isimmim}{\trtlfmim}
+
+\subsection*{Nun}
+\uyumluharftablo{\arnun}{\latupnun\latdownnun}{\isimnun}{\trtlfnun}
+
+\subsection*{Vav}
+\uyumluharftablo{\arvav}{\latupvav\latdownvav}{\isimvav}{\trtlfvav}
+
+\subsection*{He}
+\uyumluharftablo{\arhe}{\latuphe\latdownhe}{\isimhe}{\trtlfhe}
+
+\subsection*{Ye}
+\uyumluharftablo{\arye}{\latupye\latdownye}{\isimye}{\trtlfye}
+
+
+
+\section{Türk Diline Harici Sesler ve Harfler}
+
+\subsection*{Peltek Se}
+
+\subsection*{Ha}
+
+\subsection*{Hı}
+
+\subsection*{Zel}
+
+\subsection*{Sad}
+
+\subsection*{Dad}
+
+\subsection*{Ta}
+
+\subsection*{Za}
+
+\subsection*{Ayn}
+
+\subsection*{Kaf}
+
 
 % \section{Eski Yazı}
 
@@ -24,48 +139,48 @@
 \renewcommand{\arraystretch}{2.1}
 \begin{longtable*}{>{\LARGE}p{1.4\ltw}>{\LARGE}p{1.4\ltw}>{}p{1.9\ltw}>{}p{2.8\ltw}>{\timesfont}p{2\ltw}}
    \small Vekil \newline harf
-  & \small Eski yazı \newline harf
-  & \small Eski yazı \newline harf ismi
-  & \small Yeni yazı\newline karşılığı
-  & \small\normalfont Türkçe \newline telaffuz \\
+                              & \small Eski yazı \newline harf
+                              & \small Eski yazı \newline harf ismi
+                              & \small Yeni yazı\newline karşılığı
+                              & \small\normalfont Türkçe \newline telaffuz                                       \\
   %
-  % \normalsize Eskiyazı Harf & \normalsize Vekil Harf &\normalsize
-  % Yeni yazı Mukabili &\normalsize Eskiyazı okunuşu &\normalsize Türkçe \mbox{Okunuşu} \\
+  % \normalsize Eskiyazı Harf & \normalsize Vekil Harf       & \normalsize
+  % Yeni yazı Mukabili        & \normalsize Eskiyazı okunuşu & \normalsize Türkçe \mbox{Okunuşu}                 \\
   \toprule
-  \latupalif \latdownalif & \aralif                   & elif           & *A veya E          & [a, e, æ]       \\
-  \latupayn  \latdownayn  & \raisebox{0.6ex}{\arayn}  & ayn            & *gırtlak ünlüsü    & [--]            \\ % ʕſ Ʒʒ
-  \latuphemze             & \arhemze                  & hemze          & *gırtlak kapatması & [--]            \\ % ʕſ Ʒʒ
-  \latupbe   \latdownbe   & \arbe                     & be             & B                  & [b]             \\
-  \latupcim  \latdowncim  & \raisebox{0.8ex}{\arcim}  & cim            & C                  & [d͡ʒ]            \\
-  \latupchim \latdownchim & \raisebox{0.8ex}{\archim} & çim            & Ç                  & [t͡ʃ]            \\
-  \latupdal  \latdowndal  & \ardal                    & dal            & D                  & [d]             \\
-  \latupdad  \latdowndad  & \raisebox{0.8ex}{\ardad}  & dad            & *diş D             & [d, z]          \\
-  \latupfe   \latdownfe   & \arfe                     & fe             & F                  & [f]             \\
-  \latupgef  \latdowngef  & \argef                    & gef            & G                  & [ɡ]             \\
-  \latupgayn \latdowngayn & \raisebox{0.3ex}{\argayn} & gayn           & genelde Ğ          & [ɡ, ɣ]          \\
-  \latuphe   \latdownhe   & \arhe                     & he             & *ince H veya E     & [h, æ]          \\
-  \latupha   \latdownha   & \raisebox{1.1ex}{\arha}   & ha             & *kalın H           & [h]             \\
-  \latupxa   \latdownxa   & \raisebox{0.7ex}{\arxa}   & hı             & *sürtmeli H        & [h]             \\
-  \latupye   \latdownye   & \arye                     & ye             & *I, İ veya Y       & [j, ɯ, i]       \\
-  \latupje   \latdownje   & \raisebox{0.3ex}{\arje}   & je             & J                  & [ʒ]             \\
-  \latupkef  \latdownkef  & \arkef                    & kef            & *ince K            & [k]             \\
-  \latupkaf  \latdownkaf  & \arkaf                    & kaf            & *kalın K           & [k]             \\
-  \latuplam  \latdownlam  & \arlam                    & lam            & L                  & [l]             \\
-  \latupmim  \latdownmim  & \armim                    & mim            & M                  & [m]             \\
-  \latupnun  \latdownnun  & \raisebox{0.4ex}{\arnun}  & nun            & N                  & [n]             \\
-  \latupnef  \latdownnef  & \raisebox{-0.7ex}{\arnef} & nef, sağır kef & *geniz N           & [ŋ]             \\
-  \latuppe   \latdownpe   & \arpe                     & pe             & P                  & [p]             \\
-  \latupre   \latdownre   & \raisebox{0.4ex}{\arre}   & re             & R                  & [ɾ]             \\
-  \latupsin  \latdownsin  & \raisebox{0.6ex}{\arsin}  & sin            & *ince S            & [s]             \\
-  \latupsad  \latdownsad  & \raisebox{0.6ex}{\arsad}  & sad            & *kalın S           & [s]             \\
-  \latupthe  \latdownthe  & \arthe                    & peltek s       & *peltek S          & [s]             \\
-  \latupshin \latdownshin & \raisebox{0.4ex}{\arshin} & şın            & Ş                  & [ʃ]             \\
-  \latupte   \latdownte   & \arte                     & te             & *ince T            & [t]             \\
-  \latupta   \latdownta   & \arta                     & tı             & *kalın T           & [t]             \\
-  \latupvav  \latdownvav  & \raisebox{0.6ex}{\arvav}  & vav            & *O,Ö,U,Ü veya V    & \small[o, œ, u, y, v] \\
-  \latupze   \latdownze   & \raisebox{0.6ex}{\arze}   & ze             & Z                  & [z]             \\
-  \latupza   \latdownza   & \arza                     & zı             & *kalın Z           & [z]             \\
-  \latupzel  \latdownzel  & \raisebox{0.2ex}{\arzel}  & zel            & *diş Z             & [z]             \\
+  \latupalif \latdownalif     & \aralif                      & \isimalif   & *A veya E          & \trtlfalif  \\
+  \latupayn  \latdownayn      & \raisebox{0.6ex}{\arayn}     & \isimayn    & *gırtlak ünlüsü    & \trtlfayn   \\ % ʕſ Ʒʒ
+  \latupbe   \latdownbe       & \arbe                        & \isimbe     & B                  & \trtlfbe    \\
+  \latupcim  \latdowncim      & \raisebox{0.8ex}{\arcim}     & \isimcim    & C                  & \trtlfcim   \\
+  \latupchim \latdownchim     & \raisebox{0.8ex}{\archim}    & \isimchim   & Ç                  & \trtlfchim  \\
+  \latupdal  \latdowndal      & \ardal                       & \isimdal    & D                  & \trtlfdal   \\
+  \latupdad  \latdowndad      & \raisebox{0.8ex}{\ardad}     & \isimdad    & *diş D             & \trtlfdad   \\
+  \latupfe   \latdownfe       & \arfe                        & \isimfe     & F                  & \trtlffe    \\
+  \latupgef  \latdowngef      & \argef                       & \isimgef    & G                  & \trtlfgef   \\
+  \latupgayn \latdowngayn     & \raisebox{0.3ex}{\argayn}    & \isimgayn   & genelde Ğ          & \trtlfgayn  \\
+  \latuphe   \latdownhe       & \arhe                        & \isimhe     & *ince H veya E     & \trtlfhe    \\
+  \latupha   \latdownha       & \raisebox{1.1ex}{\arha}      & \isimha     & *kalın H           & \trtlfha    \\
+  \latupxa   \latdownxa       & \raisebox{0.7ex}{\arxa}      & \isimxa     & *sürtmeli H        & \trtlfxa    \\
+  \latupye   \latdownye       & \arye                        & \isimye     & *I, İ veya Y       & \trtlfye    \\
+  \latupje   \latdownje       & \raisebox{0.3ex}{\arje}      & \isimje     & J                  & \trtlfje    \\
+  \latupkef  \latdownkef      & \arkef                       & \isimkef    & *ince K            & \trtlfkef   \\
+  \latupkaf  \latdownkaf      & \arkaf                       & \isimkaf    & *kalın K           & \trtlfkaf   \\
+  \latuplam  \latdownlam      & \arlam                       & \isimlam    & L                  & \trtlflam   \\
+  \latupmim  \latdownmim      & \armim                       & \isimmim    & M                  & \trtlfmim   \\
+  \latupnun  \latdownnun      & \raisebox{0.4ex}{\arnun}     & \isimnun    & N                  & \trtlfnun   \\
+  \latupnef  \latdownnef      & \raisebox{-0.7ex}{\arnef}    & \isimnef    & *geniz N           & \trtlfnef   \\
+  \latuppe   \latdownpe       & \arpe                        & \isimpe     & P                  & \trtlfpe    \\
+  \latupre   \latdownre       & \raisebox{0.4ex}{\arre}      & \isimre     & R                  & \trtlfre    \\
+  \latupsin  \latdownsin      & \raisebox{0.6ex}{\arsin}     & \isimsin    & *ince S            & \trtlfsin   \\
+  \latupsad  \latdownsad      & \raisebox{0.6ex}{\arsad}     & \isimsad    & *kalın S           & \trtlfsad   \\
+  \latupthe  \latdownthe      & \arthe                       & \isimthe    & *peltek S          & \trtlfthe   \\
+  \latupshin \latdownshin     & \raisebox{0.4ex}{\arshin}    & \isimshin   & Ş                  & \trtlfshin  \\
+  \latupte   \latdownte       & \arte                        & \isimte     & *ince T            & \trtlfte    \\
+  \latupta   \latdownta       & \arta                        & \isimta     & *kalın T           & \trtlfta    \\
+  \latupvav  \latdownvav      & \raisebox{0.6ex}{\arvav}     & \isimvav    & *O,Ö,U,Ü veya V    & \trtlfvav   \\
+  \latupze   \latdownze       & \raisebox{0.6ex}{\arze}      & \isimze     & Z                  & \trtlfze    \\
+  \latupza   \latdownza       & \arza                        & \isimza     & *kalın Z           & \trtlfza    \\
+  \latupzel  \latdownzel      & \raisebox{0.2ex}{\arzel}     & \isimzel    & *diş Z             & \trtlfzel   \\
+  \latuphemze                 & \arhemze                     & \isimhemze  & *gırtlak kapatması & \trtlfhemze \\ % ʕſ Ʒʒ
   \bottomrule
 \end{longtable*}
 \vspace{-6ex}
