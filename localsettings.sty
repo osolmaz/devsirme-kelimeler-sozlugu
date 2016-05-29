@@ -39,6 +39,9 @@
 \usetikzlibrary{shapes,arrows}
 
 
+% \setcounter{secnumdepth}{0} % sections are level 1
+
+
 \usepackage[labelfont=bf,font=footnotesize]{caption}
 
 \usepackage{relsize}
@@ -180,6 +183,7 @@ BoldItalicFont = timesbi.ttf]
 
 \usepackage{polyglossia}
 % \usepackage{multirow}
+\usepackage{ifthen}
 
 \setotherlanguage{arabic}
 \setmainlanguage{turkish}
@@ -315,3 +319,83 @@ Scale=1.8]%
 \makeatother
 
 
+% \newcommand\ul[1]{\textsc{\textsf{#1}}}
+\newcommand\ul[1]{\textsc{#1}}
+% \newcommand\ul[1]{\uppercase{#1}}
+% \newcommand\ul[1]{\texttt{#1}}
+% \newcommand\ul[1]{\textbf{#1}}
+
+\newcommand\sectionnonumber[1]{%
+  \section*{#1}%
+  \addcontentsline{toc}{section}{\protect\numberline{}#1}%
+}
+
+\newcommand\subsectionnonumber[1]{%
+  \subsection*{#1}%
+  \addcontentsline{toc}{subsection}{\protect\numberline{}#1}%
+}
+
+
+
+\makeatletter
+\def\instring#1#2{TT\fi\begingroup
+  \edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
+%
+\def\isuppercase#1{%
+  \instring{#1}{AÂBCÇDEFGĞHIİÎJKLMNOÖÔPRSŞTUÜÛVYZ}%
+}%
+\makeatother
+
+
+
+% Macro for root indicators
+\makeatletter
+\def\declen{\@ifnextchar[\@declen%
+        {\@declen[]}}
+\def\@declen[#1]#2{%
+        \begingroup
+        \catcode`\ 12
+        \def\@declenvector{#1}
+        \iterdeclen#2\relax
+        \endgroup
+}
+\def\iterdeclen#1#2\relax{%
+  %
+  % \if#1\otherspace%
+  %   % do nothing
+  % \else%
+  % \if\isuppercase{#1}%
+  %   \textsf{#1}%
+  %   % \textsc{\lowercase{#1}}%
+  % \else%
+  %   {\larger[2]\textnormal{#1}}%
+  %   \fi%
+  %
+  \if#1\otherspace%
+    % do nothing
+  \else%
+  \if\isuppercase{#1}%
+    % {\sffamily\underline{\lowercase{#1}}}%
+    % {\sffamily\smaller[1]#1}%
+    % \textsc{\lowercase{#1}}%
+    \textsc{\lowercase{\underline{\smash{#1}}}}%
+  \else%
+    #1%
+  \fi%
+  %
+  %
+    % #1%
+    % {\@declenvector{s}{#1}}%
+  \fi%
+  %
+  \ifx\relax#2\relax
+    \let\next\relax%
+  \else
+    \let\next\iterdeclen {}%
+  \fi
+  \next#2\relax%
+}
+\catcode`\ 12
+\def\otherspace{ }%
+\catcode`\ 10
+\makeatother
