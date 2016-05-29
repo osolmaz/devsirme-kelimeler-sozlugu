@@ -335,6 +335,10 @@ Scale=1.8]%
   \addcontentsline{toc}{subsection}{\protect\numberline{}#1}%
 }
 
+\newcommand\eylem[1]{\subsubsection*{Eylem ismi: #1}}
+\newcommand\etken[1]{\subsubsection*{Etken isim: #1}}
+\newcommand\edilgen[1]{\subsubsection*{Edilgen isim: #1}}
+
 
 
 \makeatletter
@@ -377,8 +381,8 @@ Scale=1.8]%
   \if\isuppercase{#1}%
     % {\sffamily\underline{\lowercase{#1}}}%
     % {\sffamily\smaller[1]#1}%
-    % \textsc{\lowercase{#1}}%
-    \textsc{\lowercase{\underline{\smash{#1}}}}%
+    \textsc{\lowercase{#1}}%
+    % \textsc{\lowercase{\underline{\smash{#1}}}}%
   \else%
     #1%
   \fi%
