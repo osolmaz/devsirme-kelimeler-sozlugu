@@ -394,3 +394,125 @@
 
 
 
+
+
+
+% \newcommand\vek[1]{\textit{#1}}
+% \newcommand\vekilmod[1]{\textit{#1}}
+% \newcommand\vekilmod[1]{\textsc{#1}}
+\newcommand\vek[1]{\textsf{#1}}
+
+\newcommand\alif{\latupalif}
+\newcommand\ayn{\latupayn}
+\newcommand\be{\latupbe}
+\newcommand\cim{\latupcim}
+\newcommand\chim{\latupchim}
+\newcommand\dal{\latupdal}
+\newcommand\dad{\latupdad}
+\newcommand\fe{\latupfe}
+\newcommand\gef{\latupgef}
+\newcommand\gayn{\latupgayn}
+\newcommand\he{\latuphe}
+\newcommand\ha{\latupha}
+\newcommand\xa{\latupxa}
+\newcommand\ye{\latupye}
+\newcommand\je{\latupje}
+\newcommand\kef{\latupkef}
+\newcommand\kaf{\latupkaf}
+\newcommand\lam{\latuplam}
+\newcommand\mim{\latupmim}
+\newcommand\nun{\latupnun}
+\newcommand\nef{\latupnef}
+\newcommand\pe{\latuppe}
+\newcommand\re{\latupre}
+\newcommand\sinn{\latupsin}
+\newcommand\sad{\latupsad}
+\newcommand\thee{\latupthe}
+\newcommand\shin{\latupshin}
+\newcommand\te{\latupte}
+\newcommand\ta{\latupta}
+\newcommand\vav{\latupvav}
+\newcommand\ze{\latupze}
+\newcommand\za{\latupza}
+\newcommand\zel{\latupzel}
+\newcommand\hemze{\latuphemze}
+
+\newcommand\hemzup[1]{\textoversetdist{\hemze}{#1}{-2.8ex}}
+\newcommand\fethe[1]{\textoversetdist{--}{#1}{-2.48ex}}
+\newcommand\kesre[1]{\textoversetdist{--}{#1}{-.58ex}}
+\newcommand\sukun[1]{\textoversetdist{\textdegree}{#1}{-2.87ex}}
+\newcommand\otre[1]{\textoversetdist{\smaller[2]u}{#1}{-2.87ex}}
+\newcommand\madde[1]{\textoversetdist{\smaller\textasciitilde}{#1}{-2.6ex}}
+\newcommand\sedde[1]{\textoversetdist{\smaller[2]\timesfont ω}{#1}{-2.85ex}}
+
+% \newcommand\hemzup[1]{$\overset{\text{\hemze}}{\text{#1}}$}
+
+
+
+
+% % Vekil alfabe makrosu
+% \makeatletter
+% \def\vek{\@ifnextchar[\@vek%
+%         {\@vek[]}}
+% \def\@vek[#1]#2{%
+%         \begingroup
+%         \catcode`\ 12
+%         \def\@vekvector{#1}
+%         \itervek#2\relax
+%         \endgroup
+% }
+% \def\itervek#1#2\relax{%
+%   %
+%   \if#1\otherspace%
+%     % do nothing
+%   \else%
+%     \ifthenelse{\equal{#1}{a}}{\vekilmod{\latupalif}}{}%
+%     \ifthenelse{\equal{#1}{o}}{\vekilmod{\latupayn}}{}%
+%     \ifthenelse{\equal{#1}{b}}{\vekilmod{\latupbe}}{}%
+%     \ifthenelse{\equal{#1}{c}}{\vekilmod{\latupcim}}{}%
+%     \ifthenelse{\equal{#1}{ç}}{\vekilmod{\latupchim}}{}%
+%     \ifthenelse{\equal{#1}{d}}{\vekilmod{\latupdal}}{}%
+%     \ifthenelse{\equal{#1}{D}}{\vekilmod{\latupdad}}{}%
+%     \ifthenelse{\equal{#1}{f}}{\vekilmod{\latupfe}}{}%
+%     \ifthenelse{\equal{#1}{G}}{\vekilmod{\latupgef}}{}%
+%     \ifthenelse{\equal{#1}{g}}{\vekilmod{\latupgayn}}{}%
+%     \ifthenelse{\equal{#1}{h}}{\vekilmod{\latuphe}}{}%
+%     \ifthenelse{\equal{#1}{H}}{\vekilmod{\latupha}}{}%
+%     \ifthenelse{\equal{#1}{x}}{\vekilmod{\latupxa}}{}%
+%     \ifthenelse{\equal{#1}{y}}{\vekilmod{\latupye}}{}%
+%     \ifthenelse{\equal{#1}{j}}{\vekilmod{\latupje}}{}%
+%     \ifthenelse{\equal{#1}{k}}{\vekilmod{\latupkef}}{}%
+%     \ifthenelse{\equal{#1}{K}}{\vekilmod{\latupkaf}}{}%
+%     \ifthenelse{\equal{#1}{l}}{\vekilmod{\latuplam}}{}%
+%     \ifthenelse{\equal{#1}{m}}{\vekilmod{\latupmim}}{}%
+%     \ifthenelse{\equal{#1}{n}}{\vekilmod{\latupnun}}{}%
+%     \ifthenelse{\equal{#1}{N}}{\vekilmod{\latupnef}}{}%
+%     \ifthenelse{\equal{#1}{p}}{\vekilmod{\latuppe}}{}%
+%     \ifthenelse{\equal{#1}{r}}{\vekilmod{\latupre}}{}%
+%     \ifthenelse{\equal{#1}{s}}{\vekilmod{\latupsin}}{}%
+%     \ifthenelse{\equal{#1}{S}}{\vekilmod{\latupsad}}{}%
+%     \ifthenelse{\equal{#1}{P}}{\vekilmod{\latupthe}}{}%
+%     \ifthenelse{\equal{#1}{ş}}{\vekilmod{\latupshin}}{}%
+%     \ifthenelse{\equal{#1}{t}}{\vekilmod{\latupte}}{}%
+%     \ifthenelse{\equal{#1}{T}}{\vekilmod{\latupta}}{}%
+%     \ifthenelse{\equal{#1}{v}}{\vekilmod{\latupvav}}{}%
+%     \ifthenelse{\equal{#1}{z}}{\vekilmod{\latupze}}{}%
+%     \ifthenelse{\equal{#1}{Z}}{\vekilmod{\latupza}}{}%
+%     \ifthenelse{\equal{#1}{J}}{\vekilmod{\latupzel}}{}%
+%     \ifthenelse{\equal{#1}{'}}{\vekilmod{\latuphemze}}{}%
+%   \fi%
+%   %
+%   \ifx\relax#2\relax
+%     \let\next\relax%
+%   \else
+%     \let\next\itervek {}%
+%   \fi
+%   \next#2\relax%
+% }
+% \catcode`\ 12
+% \def\otherspace{ }%
+% \catcode`\ 10
+% \makeatother
+
+
+

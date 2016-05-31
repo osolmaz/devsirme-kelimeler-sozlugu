@@ -1,48 +1,48 @@
 \newcommand\uyumluharftablo[4]{%
   % \renewcommand{\arraystretch}{3}
-  \begin{tabular}{|>{\centering}p{0.15\textwidth}%
-    |>{\centering}p{0.15\textwidth}%
-    |>{\centering}p{0.25\textwidth}%
-    |>{\centering}p{0.25\textwidth}|}
-    \hline
+  \begin{tabular}{>{\centering}p{0.15\textwidth}%
+    >{\centering}p{0.15\textwidth}%
+    >{\centering}p{0.25\textwidth}%
+    >{\centering}p{0.25\textwidth}}
+    \toprule
     \footnotesize Eski yazı harf
     & \footnotesize Vekil harf
     & \footnotesize Eski yazı harf ismi
     & \footnotesize Türkçe telaffuz
       \tabularnewline
-      \hline
+      \midrule
     \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #1 \end{minipage}
     & \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #2 \end{minipage}
     & #3
     & \timesfont #4
       \tabularnewline
-    \hline
+    \bottomrule
   \end{tabular}%
 }
 
 \newcommand\hariciharftablo[5]{%
   % \renewcommand{\arraystretch}{3}
-  \begin{tabular}{|>{\centering}p{0.15\textwidth}%
-    |>{\centering}p{0.15\textwidth}%
-    |>{\centering}p{0.20\textwidth}%
-    |>{\centering}p{0.17\textwidth}%
-    |>{\centering}p{0.17\textwidth}%
-    |}
-    \hline
+  \begin{tabular}{>{\centering}p{0.15\textwidth}%
+    >{\centering}p{0.15\textwidth}%
+    >{\centering}p{0.20\textwidth}%
+    >{\centering}p{0.17\textwidth}%
+    >{\centering}p{0.17\textwidth}%
+    }
+    \toprule
     \footnotesize Eski yazı harf
     & \footnotesize Vekil harf
     & \footnotesize Eski yazı harf ismi
     & \footnotesize Türkçe telaffuz
     & \footnotesize Arapça telaffuz
       \tabularnewline
-      \hline
+      \midrule
     \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #1 \end{minipage}
     & \begin{minipage}[c][10ex]{0.15\textwidth} \centering \Huge #2 \end{minipage}
     & #3
     & \timesfont #4
     & \timesfont #5
       \tabularnewline
-    \hline
+    \bottomrule
   \end{tabular}%
 }
 
@@ -161,8 +161,14 @@
 \subsection*{Ayn}
 \hariciharftablo{\arayn}{\latupayn\latdownayn}{\isimayn}{\trtlfayn}{\artlfayn}
 
+% \vek{\mim\sinn\te\hemzup{\alif}\cim\re}
+
+% \vek{\kesre{\fethe{\ze}}} \vek{\sukun{\ze}} \vek{\otre{\ze}} \vek{\madde{\ze}}
+% \vek{\sedde{\ze}}
+
 \subsection*{Kaf}
 \hariciharftablo{\arkaf}{\latupkaf\latdownkaf}{\isimkaf}{\trtlfkaf}{\artlfkaf}
+
 
 
 % \section{Eski Yazı}
