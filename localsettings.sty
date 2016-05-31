@@ -17,7 +17,7 @@
 \usepackage{siunitx}
 \usepackage{float}
 \usepackage{calc}
-\usepackage{fancyhdr}
+% \usepackage{fancyhdr}
 \usepackage{keyval}
 \usepackage{pstricks}
 \usepackage{multirow}
@@ -41,6 +41,8 @@
 % \usepackage{tipa}
 
 % \setcounter{secnumdepth}{0} % sections are level 1
+% \usepackage{sectsty}
+% \allsectionsfont{\centering}
 
 
 \usepackage[labelfont=bf,font=footnotesize]{caption}
@@ -52,12 +54,55 @@
 % \widowpenalty=10000
 % \clubpenalty=10000
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\MakeUppercase}[1]{#1}	% Kopfzeilen nicht in gross
+
+\fancyhead{}				% Kopfzeile
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[le,ro]{\thepage}
+\fancyhead[co]{\itshape\rightmark}
+\fancyhead[ce]{\itshape\leftmark}
+
+\fancyfoot{}				% Fusszeile
+
+%\fancyfoot[c]{\sffamily\small Version vom \today}
+
+\fancypagestyle{plain}{%
+  \fancyhead{}%
+  \fancyfoot[c]{\sffamily\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+
 \hypersetup{
     colorlinks,
     linkcolor={blue!50!black},
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+
+
+% \setkomafont{chapter}{\centering\huge}
+
+% \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
+% \renewcommand*{\chapterformat}{%
+%     \raggedleft
+%     \chapapp\enskip\thechapter\\
+%     \hrulefill\\[-9pt]
+% }
+% \renewcommand*{\chapterheadendvskip}{%
+%     \vspace{-12pt}\noindent{\setlength{\parskip}{0pt}\Huge\hrulefill\par}
+%     \vspace{\baselineskip}
+% }
+
+\KOMAoption{chapterprefix}{true}
+\let\raggedchapter\centering
+\renewcommand*{\chapterformat}{%
+  \Large\centering\chapapp~\thechapter\\
+}
+\addtokomafont{chapter}{\centering}
+
 
 \usepackage{mathpazo}
 
