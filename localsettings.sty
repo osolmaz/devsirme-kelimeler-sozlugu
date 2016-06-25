@@ -6,6 +6,7 @@
 %%             Packages to be used                    %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+\usepackage[most]{tcolorbox}
 \usepackage{multicol}
 % \usepackage{soul}
 % \usepackage{cancel}
@@ -32,6 +33,7 @@
 \usepackage{hyperref}
 % \usepackage{svg}
 \usepackage{ifthen}
+\usepackage[framemethod=tikz]{mdframed}
 
 \usepackage{tikz}
 \usepackage{tikzscale}
@@ -373,6 +375,40 @@ Scale=1.8]%
 \newcommand\etken[1]{\subsubsection*{Etken isim: #1}}
 \newcommand\edilgen[1]{\subsubsection*{Edilgen isim: #1}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\tcbset{
+  frame code={}
+  center title,
+  left=0pt,
+  right=0pt,
+  top=0pt,
+  bottom=0pt,
+  colback=gray!30,
+  colframe=white,
+  width=\dimexpr\textwidth\relax,
+  enlarge left by=0mm,
+  boxsep=5pt,
+  arc=0pt,outer arc=0pt,
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\showcasekip[2]{%
+  % \begin{tcolorbox}%
+  \begin{center}%
+  \fbox{\large\bfseries#1}%
+  \\[1ex][#2]
+  \end{center}%
+  % \end{tcolorbox}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 \makeatletter
@@ -383,7 +419,6 @@ Scale=1.8]%
   \instring{#1}{AÂBCÇDEFGĞHIİÎJKLMNOÖÔPRSŞTUÜÛVYZ}%
 }%
 \makeatother
-
 
 
 % Macro for root indicators
@@ -437,3 +472,39 @@ Scale=1.8]%
 \def\otherspace{ }%
 \catcode`\ 10
 \makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\mdfdefinestyle{thmstyle}{%
+      % backgroundcolor=gray!20,
+      frametitlerule=true,
+      linecolor=black,
+      innertopmargin=2ex,
+      innerbottommargin=3ex,
+      % roundcorner=5pt,
+      % frametitlerulewidth=1pt,
+      frametitlerulecolor=black,
+      frametitlealignment={\hspace*{-0.033\linewidth}},
+      % frametitlefont=\Large,
+      % frametitlefont=\bfseries,
+      % skipabove=\topskip,skipbelow=\topskip,
+      %%% kill the initial \parskip
+      % innertopmargin=\dimexpr.4\baselineskip-\parskip\relax,
+      % skipabove={\dimexpr0.5\baselineskip+\topskip\relax},
+      % skipbelow={−1em},
+      % needspace=3\baselineskip,
+      % skipabove=\parsep,
+      % skipbelow=\parsep
+    }
+
+\mdtheorem[style=thmstyle]{remark}{Remark}[section]
+% \mdtheorem[style=thmstyle]{kip}{Kip}[subsection]
+\mdtheorem[style=thmstyle]{eylemkip}{Eylem Kipi}
+
+\newcommand\declenlarge[1]{{\large\declen{#1}}}
+
+\newenvironment{eylemkipi}[1]%
+{\begin{mdframed}[frametitle={#1}]}%
+{\end{mdframed}}
+
+
