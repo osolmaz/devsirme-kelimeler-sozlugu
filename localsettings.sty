@@ -83,26 +83,15 @@
 }
 
 
-% \setkomafont{chapter}{\centering\huge}
-
-% \renewcommand*{\chapterheadstartvskip}{\vskip-10pt}
-% \renewcommand*{\chapterformat}{%
-%     \raggedleft
-%     \chapapp\enskip\thechapter\\
-%     \hrulefill\\[-9pt]
-% }
-% \renewcommand*{\chapterheadendvskip}{%
-%     \vspace{-12pt}\noindent{\setlength{\parskip}{0pt}\Huge\hrulefill\par}
-%     \vspace{\baselineskip}
-% }
 
 \KOMAoption{chapterprefix}{true}
+\RedeclareSectionCommand[beforeskip=0pt,
+afterskip=1cm]{chapter}
 \let\raggedchapter\centering
 \renewcommand*{\chapterformat}{%
   \Large\centering\chapapp~\thechapter\\
 }
 \addtokomafont{chapter}{\centering}
-
 
 \usepackage{mathpazo}
 
