@@ -476,35 +476,63 @@ Scale=1.8]%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mdfdefinestyle{thmstyle}{%
-      % backgroundcolor=gray!20,
-      frametitlerule=true,
-      linecolor=black,
-      innertopmargin=2ex,
-      innerbottommargin=3ex,
-      % roundcorner=5pt,
-      % frametitlerulewidth=1pt,
-      frametitlerulecolor=black,
-      frametitlealignment={\hspace*{-0.033\linewidth}},
-      % frametitlefont=\Large,
-      % frametitlefont=\bfseries,
-      % skipabove=\topskip,skipbelow=\topskip,
-      %%% kill the initial \parskip
-      % innertopmargin=\dimexpr.4\baselineskip-\parskip\relax,
-      % skipabove={\dimexpr0.5\baselineskip+\topskip\relax},
-      % skipbelow={−1em},
-      % needspace=3\baselineskip,
-      % skipabove=\parsep,
-      % skipbelow=\parsep
-    }
+  % backgroundcolor=gray!20,
+  frametitlerule=true,
+  linecolor=black,
+  innertopmargin=2ex,
+  innerbottommargin=3ex,
+  % roundcorner=5pt,
+  % frametitlerulewidth=1pt,
+  frametitlerulecolor=black,
+  frametitlealignment={\hspace*{-0.033\linewidth}},
+  % frametitlefont=\Large,
+  % frametitlefont=\bfseries,
+  % skipabove=\topskip,skipbelow=\topskip,
+  %%% kill the initial \parskip
+  % innertopmargin=\dimexpr.4\baselineskip-\parskip\relax,
+  % skipabove={\dimexpr0.5\baselineskip+\topskip\relax},
+  % skipbelow={−1em},
+  % needspace=3\baselineskip,
+  % skipabove=\parsep,
+  % skipbelow=\parsep
+}
 
-\mdtheorem[style=thmstyle]{remark}{Remark}[section]
+\mdfdefinestyle{thmstyle2}{%
+  backgroundcolor=black!7!white,
+  frametitlerule=true,
+  innertopmargin=2ex,
+  innerbottommargin=3ex,
+  frametitlerulewidth=5pt,
+  frametitlerulecolor=white,
+  frametitlealignment={\hspace*{-0.033\linewidth}},
+}
+
+
 % \mdtheorem[style=thmstyle]{kip}{Kip}[subsection]
-\mdtheorem[style=thmstyle]{eylemkip}{Eylem Kipi}
+% \mdtheorem[style=thmstyle]{eylemkip}{Eylem Kipi}
 
 \newcommand\declenlarge[1]{{\large\declen{#1}}}
 
-\newenvironment{eylemkipi}[1]%
-{\begin{mdframed}[frametitle={#1}]}%
-{\end{mdframed}}
+% \newenvironment{eylemkipi}[1]%
+% {\begin{mdframed}[frametitle={#1}, style=thmstyle2]}%
+% {\end{mdframed}}
 
-
+\newenvironment{eylemkipi}[1]{%
+  \mdfsetup{%
+    frametitlealignment=\center,
+    frametitle={%
+      \tikz[baseline=(current bounding box.east),outer sep=0pt]
+      \node[anchor=east,rectangle,line width=0.4pt, draw=black, fill=white,
+      % minimum height=4.5ex,
+      inner sep=1.2ex]%
+      % \node[anchor=east,rectangle,fill=gray!20]
+      {\strut #1};}}%
+  %
+  \mdfsetup{innertopmargin=7pt,%
+    linecolor=black,%
+    linewidth=0.4pt,%
+    topline=true,%
+    frametitleaboveskip=-5ex,}%
+  % frametitleaboveskip=\dimexpr-\ht\strutbox\relax,}
+  \begin{mdframed}%
+}{\end{mdframed}}
