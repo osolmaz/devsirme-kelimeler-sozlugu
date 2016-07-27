@@ -13,6 +13,7 @@
 
 % \usepackage{caption}
 \usepackage{formatting}
+\usepackage{kipdesc}
 
 \newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
 
@@ -28,8 +29,22 @@
 
 % \title{\Huge\fat:\\[0.6ex] \large Türkçe İçindeki Farsoarap Unsurların \\
 %   Ortografi, Gramer ve Kelime Türetme Esasları}
-\title{\LARGE\sffamily Türkçe İçindeki Farsoarap Unsurların \\
-  Ortografi, Gramer ve Kelime-Türetme Kuralları}
+\title{
+  \begin{minipage}{0.8\linewidth}
+    % \Huge
+    \centering%
+    \fontsize{30pt}{35pt}\selectfont
+    Modern Osmanlıca%
+  \end{minipage}
+  \vspace{-1ex}\\
+  \rule{0.8\textwidth}{.4pt}\\[0.8ex]
+  % \vspace{0.51ex}
+  \begin{minipage}{0.8\linewidth}
+    \fontsize{16pt}{20pt}\selectfont
+    \sffamily\centering
+    Türk Dilindeki Farsoarap Unsurların
+    Ortografi, Gramer ve Kelime Türetme Kuralları
+  \end{minipage}}
 \author{H.\ O.\ Solmaz}
 \date{}
 
