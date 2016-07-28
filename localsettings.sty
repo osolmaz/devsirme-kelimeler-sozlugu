@@ -31,9 +31,13 @@
 \usepackage{longtable}
 \usepackage{hyphenat}
 \usepackage{hyperref}
-% \usepackage{svg}
+\usepackage{svg}
+% quick hack to override error message with \includesvg in xetex
+\newcommand\pdffilemoddate[1]{#1}
+
 \usepackage{ifthen}
 \usepackage[framemethod=tikz]{mdframed}
+\usepackage{xspace}
 
 \usepackage{tikz}
 \usepackage{tikzscale}
@@ -371,9 +375,6 @@ Scale=1.8]%
   \addcontentsline{toc}{subsection}{\protect\numberline{}#1}%
 }
 
-\newcommand\eylem[1]{\subsubsection*{Eylem ismi: #1}}
-\newcommand\etken[1]{\subsubsection*{Etken isim: #1}}
-\newcommand\edilgen[1]{\subsubsection*{Edilgen isim: #1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -396,144 +397,3 @@ Scale=1.8]%
 
 
 %%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand\showcasekip[2]{%
-  % \begin{tcolorbox}%
-  \begin{center}%
-  \fbox{\large\bfseries#1}%
-  \\[1ex][#2]
-  \end{center}%
-  % \end{tcolorbox}%
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-\makeatletter
-\def\instring#1#2{TT\fi\begingroup
-  \edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
-%
-\def\isuppercase#1{%
-  \instring{#1}{AÂBCÇDEFGĞHIİÎJKLMNOÖÔPRSŞTUÜÛVYZ}%
-}%
-\makeatother
-
-
-% Macro for root indicators
-\makeatletter
-\def\declen{\@ifnextchar[\@declen%
-        {\@declen[]}}
-\def\@declen[#1]#2{%
-        \begingroup%
-        \catcode`\ 12%
-        \def\@declenvector{#1}%
-        \iterdeclen#2\relax%
-        \endgroup%
-}%
-\def\iterdeclen#1#2\relax{%
-  %
-  % \if#1\otherspace%
-  %   % do nothing
-  % \else%
-  % \if\isuppercase{#1}%
-  %   \textsf{#1}%
-  %   % \textsc{\lowercase{#1}}%
-  % \else%
-  %   {\larger[2]\textnormal{#1}}%
-  %   \fi%
-  %
-  \if#1\otherspace%
-    % do nothing
-  \else%
-  \if\isuppercase{#1}%
-    % {\sffamily\underline{\lowercase{#1}}}%
-    % {\sffamily\smaller[1]#1}%
-    \textsc{\lowercase{#1}}%
-    % \textsc{\lowercase{\underline{\smash{#1}}}}%
-  \else%
-    #1%
-  \fi%
-  %
-  %
-    % #1%
-    % {\@declenvector{s}{#1}}%
-  \fi%
-  %
-  \ifx\relax#2\relax
-    \let\next\relax%
-  \else
-    \let\next\iterdeclen {}%
-  \fi
-  \next#2\relax%
-}
-\catcode`\ 12
-\def\otherspace{ }%
-\catcode`\ 10
-\makeatother
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\mdfdefinestyle{thmstyle}{%
-  % backgroundcolor=gray!20,
-  frametitlerule=true,
-  linecolor=black,
-  innertopmargin=2ex,
-  innerbottommargin=3ex,
-  % roundcorner=5pt,
-  % frametitlerulewidth=1pt,
-  frametitlerulecolor=black,
-  frametitlealignment={\hspace*{-0.033\linewidth}},
-  % frametitlefont=\Large,
-  % frametitlefont=\bfseries,
-  % skipabove=\topskip,skipbelow=\topskip,
-  %%% kill the initial \parskip
-  % innertopmargin=\dimexpr.4\baselineskip-\parskip\relax,
-  % skipabove={\dimexpr0.5\baselineskip+\topskip\relax},
-  % skipbelow={−1em},
-  % needspace=3\baselineskip,
-  % skipabove=\parsep,
-  % skipbelow=\parsep
-}
-
-\mdfdefinestyle{thmstyle2}{%
-  frametitlebackgroundcolor=black!7!white,
-  frametitlerule=true,
-  innertopmargin=2ex,
-  innerbottommargin=3ex,
-  % frametitlerulewidth=5pt,
-  % frametitlerulecolor=white,
-  frametitlealignment={\hspace*{-0.033\linewidth}},
-}
-
-
-% \mdtheorem[style=thmstyle]{kip}{Kip}[subsection]
-% \mdtheorem[style=thmstyle]{eylemkip}{Eylem Kipi}
-
-\newcommand\declenlarge[1]{{\large\declen{#1}}}
-
-\newenvironment{kip}[1]%
-{\begin{mdframed}[frametitle={#1}, style=thmstyle2]}%
-{\end{mdframed}}
-
-% \newenvironment{kip}[1]{%
-%   \mdfsetup{%
-%     innertopmargin=7pt,%
-%     linecolor=black,%
-%     linewidth=0.4pt,%
-%     topline=true,%
-%     frametitleaboveskip=-2.6ex,
-%     % frametitleaboveskip=-5ex,
-%     % frametitlealignment=\center,
-%     frametitle={%
-%       \tikz[baseline=(current bounding box.east),outer sep=0pt]
-%       \node[anchor=east,rectangle,line width=0.4pt, draw=black, fill=white,
-%       % minimum height=4.5ex,
-%       inner sep=1.2ex]%
-%       % \node[anchor=east,rectangle,fill=gray!20]
-%       {\strut #1};}}%
-%   %
-%   % frametitleaboveskip=\dimexpr-\ht\strutbox\relax,}
-%   \begin{mdframed}%
-% }{\end{mdframed}}

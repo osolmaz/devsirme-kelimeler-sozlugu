@@ -3,39 +3,39 @@
     \bfseries
     % \sffamily
     \small
-    \node(01_1)[text depth=0.25ex, text height=2.5ex, text centered] at (0   , 0) {\latupalif};
-    \node(02_1)[text depth=0.25ex, text height=2.5ex, text centered] at (5   , 0) {\latupbe};
-    \node(03_1)[text depth=0.25ex, text height=2.5ex, text centered] at (10  , 0) {\latuppe};
-    \node(04_1)[text depth=0.25ex, text height=2.5ex, text centered] at (15  , 0) {\latupte};
-    \node(05_1)[text depth=0.25ex, text height=2.5ex, text centered] at (20  , 0) {\latupthe};
-    \node(06_1)[text depth=0.25ex, text height=2.5ex, text centered] at (25  , 0) {\latupcim};
-    \node(07_1)[text depth=0.25ex, text height=2.5ex, text centered] at (30  , 0) {\latupchim};
-    \node(08_1)[text depth=0.25ex, text height=2.5ex, text centered] at (35  , 0) {\latupha};
-    \node(09_1)[text depth=0.25ex, text height=2.5ex, text centered] at (40  , 0) {\latupxa};
-    \node(10_1)[text depth=0.25ex, text height=2.5ex, text centered] at (45  , 0) {\latupdal};
-    \node(11_1)[text depth=0.25ex, text height=2.5ex, text centered] at (50  , 0) {\latupzel};
-    \node(12_1)[text depth=0.25ex, text height=2.5ex, text centered] at (55  , 0) {\latupre};
-    \node(13_1)[text depth=0.25ex, text height=2.5ex, text centered] at (60  , 0) {\latupze};
-    \node(14_1)[text depth=0.25ex, text height=2.5ex, text centered] at (65  , 0) {\latupje};
-    \node(15_1)[text depth=0.25ex, text height=2.5ex, text centered] at (70  , 0) {\latupsin};
-    \node(16_1)[text depth=0.25ex, text height=2.5ex, text centered] at (75  , 0) {\latupshin};
-    \node(17_1)[text depth=0.25ex, text height=2.5ex, text centered] at (80  , 0) {\latupsad};
-    \node(18_1)[text depth=0.25ex, text height=2.5ex, text centered] at (85  , 0) {\latupdad};
-    \node(19_1)[text depth=0.25ex, text height=2.5ex, text centered] at (90  , 0) {\latupta};
-    \node(20_1)[text depth=0.25ex, text height=2.5ex, text centered] at (95  , 0) {\latupza};
-    \node(21_1)[text depth=0.25ex, text height=2.5ex, text centered] at (100 , 0) {\latupayn};
-    \node(22_1)[text depth=0.25ex, text height=2.5ex, text centered] at (105 , 0) {\latupgayn};
-    \node(23_1)[text depth=0.25ex, text height=2.5ex, text centered] at (110 , 0) {\latupfe};
-    \node(24_1)[text depth=0.25ex, text height=2.5ex, text centered] at (115 , 0) {\latupkaf};
-    \node(25_1)[text depth=0.25ex, text height=2.5ex, text centered] at (120 , 0) {\latupkef};
-    \node(26_1)[text depth=0.25ex, text height=2.5ex, text centered] at (125 , 0) {\latupgef};
-    \node(27_1)[text depth=0.25ex, text height=2.5ex, text centered] at (130 , 0) {\latupnef};
-    \node(28_1)[text depth=0.25ex, text height=2.5ex, text centered] at (135 , 0) {\latuplam};
-    \node(29_1)[text depth=0.25ex, text height=2.5ex, text centered] at (140 , 0) {\latupmim};
-    \node(30_1)[text depth=0.25ex, text height=2.5ex, text centered] at (145 , 0) {\latupnun};
-    \node(31_1)[text depth=0.25ex, text height=2.5ex, text centered] at (150 , 0) {\latupvav};
-    \node(32_1)[text depth=0.25ex, text height=2.5ex, text centered] at (155 , 0) {\latuphe};
-    \node(33_1)[text depth=0.25ex, text height=2.5ex, text centered] at (160 , 0) {\latupye};
+    \node(01_1)[text depth=0.25ex, text height=2.5ex, text centered] at (0   , 0) {\Lalif};
+    \node(02_1)[text depth=0.25ex, text height=2.5ex, text centered] at (5   , 0) {\Lbe};
+    \node(03_1)[text depth=0.25ex, text height=2.5ex, text centered] at (10  , 0) {\Lpe};
+    \node(04_1)[text depth=0.25ex, text height=2.5ex, text centered] at (15  , 0) {\Lte};
+    \node(05_1)[text depth=0.25ex, text height=2.5ex, text centered] at (20  , 0) {\Lthe};
+    \node(06_1)[text depth=0.25ex, text height=2.5ex, text centered] at (25  , 0) {\Lcim};
+    \node(07_1)[text depth=0.25ex, text height=2.5ex, text centered] at (30  , 0) {\Lchim};
+    \node(08_1)[text depth=0.25ex, text height=2.5ex, text centered] at (35  , 0) {\Lha};
+    \node(09_1)[text depth=0.25ex, text height=2.5ex, text centered] at (40  , 0) {\Lxa};
+    \node(10_1)[text depth=0.25ex, text height=2.5ex, text centered] at (45  , 0) {\Ldal};
+    \node(11_1)[text depth=0.25ex, text height=2.5ex, text centered] at (50  , 0) {\Lzel};
+    \node(12_1)[text depth=0.25ex, text height=2.5ex, text centered] at (55  , 0) {\Lre};
+    \node(13_1)[text depth=0.25ex, text height=2.5ex, text centered] at (60  , 0) {\Lze};
+    \node(14_1)[text depth=0.25ex, text height=2.5ex, text centered] at (65  , 0) {\Lje};
+    \node(15_1)[text depth=0.25ex, text height=2.5ex, text centered] at (70  , 0) {\Lsin};
+    \node(16_1)[text depth=0.25ex, text height=2.5ex, text centered] at (75  , 0) {\Lshin};
+    \node(17_1)[text depth=0.25ex, text height=2.5ex, text centered] at (80  , 0) {\Lsad};
+    \node(18_1)[text depth=0.25ex, text height=2.5ex, text centered] at (85  , 0) {\Ldad};
+    \node(19_1)[text depth=0.25ex, text height=2.5ex, text centered] at (90  , 0) {\Lta};
+    \node(20_1)[text depth=0.25ex, text height=2.5ex, text centered] at (95  , 0) {\Lza};
+    \node(21_1)[text depth=0.25ex, text height=2.5ex, text centered] at (100 , 0) {\Layn};
+    \node(22_1)[text depth=0.25ex, text height=2.5ex, text centered] at (105 , 0) {\Lgayn};
+    \node(23_1)[text depth=0.25ex, text height=2.5ex, text centered] at (110 , 0) {\Lfe};
+    \node(24_1)[text depth=0.25ex, text height=2.5ex, text centered] at (115 , 0) {\Lkaf};
+    \node(25_1)[text depth=0.25ex, text height=2.5ex, text centered] at (120 , 0) {\Lkef};
+    \node(26_1)[text depth=0.25ex, text height=2.5ex, text centered] at (125 , 0) {\Lgef};
+    \node(27_1)[text depth=0.25ex, text height=2.5ex, text centered] at (130 , 0) {\Lnef};
+    \node(28_1)[text depth=0.25ex, text height=2.5ex, text centered] at (135 , 0) {\Llam};
+    \node(29_1)[text depth=0.25ex, text height=2.5ex, text centered] at (140 , 0) {\Lmim};
+    \node(30_1)[text depth=0.25ex, text height=2.5ex, text centered] at (145 , 0) {\Lnun};
+    \node(31_1)[text depth=0.25ex, text height=2.5ex, text centered] at (150 , 0) {\Lvav};
+    \node(32_1)[text depth=0.25ex, text height=2.5ex, text centered] at (155 , 0) {\Lhe};
+    \node(33_1)[text depth=0.25ex, text height=2.5ex, text centered] at (160 , 0) {\Lye};
   }
   {
     \bfseries

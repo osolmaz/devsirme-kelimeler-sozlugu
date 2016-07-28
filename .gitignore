@@ -8,3 +8,4 @@ fig/*.eps
 *.out
 *~
 \#*\#
+*.pdf_tex
